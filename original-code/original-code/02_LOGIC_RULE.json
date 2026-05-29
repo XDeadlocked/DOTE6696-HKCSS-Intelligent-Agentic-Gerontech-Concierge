@@ -1,0 +1,687 @@
+{
+  "meta": {
+    "name": "ERenteBuy長者輔具評估LogicRule_V5_繁體問卷版",
+    "version": "V5.0_Agent",
+    "start_node": "node_01_role",
+    "multi_branch_strategy": "iterate_sequential",
+    "global_disclaimer": "\n\n為確保器材適合你的身體狀況和家居環境，請先諮詢職業治療師並進行專業評估。\n\n諮詢及租借服務查詢\n電話：3992 1726\n電郵：info@ageathome.hk"
+  },
+  "state_schema": {
+    "user_answers": {},
+    "current_node": "",
+    "pending_branches": [],
+    "collected_recommendations": [],
+    "device_tags": []
+  },
+  "nodes": {
+    "node_01_role": {
+      "type": "single_choice",
+      "question": "請問您諮詢租賃服務的身份是？（單選）",
+      "options": [
+        "我是使用者",
+        "我是照顧者"
+      ],
+      "next": {
+        "我是使用者": "node_02_disease_background_self",
+        "我是照顧者": "node_02_disease_background_carer"
+      }
+    },
+    "node_02_disease_background_self": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "需要諮詢租賃醫療器械相關的疾病或健康狀況是？（多選）（不參與跳轉）",
+      "options": [
+        "骨科問題（骨折、關節置換、脊柱疾病、骨質疏鬆、關節炎等）",
+        "中風/腦卒中後遺症",
+        "帕金森病/神經系統退化疾病",
+        "阿爾茨海默病/認知障礙/記憶力嚴重下降",
+        "心臟病/高血壓/心血管疾病",
+        "慢性呼吸系統疾病（COPD、哮喘等）",
+        "糖尿病及其併發症（足部問題、視力問題等）",
+        "癌症術後康復/長期護理",
+        "視力或聽力障礙",
+        "術後康復（任何手術後需要輔助設備）",
+        "長期臥床/行動不便",
+        "失禁/泌尿系統問題",
+        "皮膚傷口/壓瘡護理",
+        "肌肉萎縮/肌無力",
+        "其他疾病（請說明：______）",
+        "不確定具體疾病，主要解決生活不便問題"
+      ],
+      "next": {
+        "*": "node_03_self_difficulties"
+      }
+    },
+    "node_02_disease_background_carer": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "需要諮詢租賃醫療器械相關的疾病或健康狀況是？（多選）（不參與跳轉）",
+      "options": [
+        "骨科問題（骨折、關節置換、脊柱疾病、骨質疏鬆、關節炎等）",
+        "中風/腦卒中後遺症",
+        "帕金森病/神經系統退化疾病",
+        "阿爾茨海默病/認知障礙/記憶力嚴重下降",
+        "心臟病/高血壓/心血管疾病",
+        "慢性呼吸系統疾病（COPD、哮喘等）",
+        "糖尿病及其併發症（足部問題、視力問題等）",
+        "癌症術後康復/長期護理",
+        "視力或聽力障礙",
+        "術後康復（任何手術後需要輔助設備）",
+        "長期臥床/行動不便",
+        "失禁/泌尿系統問題",
+        "皮膚傷口/壓瘡護理",
+        "肌肉萎縮/肌無力",
+        "其他疾病（請說明：______）",
+        "不確定具體疾病，主要解決生活不便問題"
+      ],
+      "next": {
+        "*": "node_03_carer_worries"
+      }
+    },
+    "node_03_self_difficulties": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "您最近生活上最不方便的是什麼事？（多選）",
+      "options": [
+        "走路不穩，容易摔倒",
+        "洗澡上廁所很危險",
+        "記性變差，經常忘事",
+        "身體這裡痛那裡痛",
+        "一個人在家很孤單",
+        "吃飯喝水有困難",
+        "躺床上不舒服",
+        "其他問題（請簡單描述：______）"
+      ],
+      "next": {
+        "走路不穩，容易摔倒": "node_04_self_walking",
+        "洗澡上廁所很危險": "node_04_self_bathing",
+        "記性變差，經常忘事": "node_04_self_memory",
+        "身體這裡痛那裡痛": "node_04_self_pain",
+        "一個人在家很孤單": "node_04_self_lonely",
+        "吃飯喝水有困難": "node_04_self_eating",
+        "躺床上不舒服": "node_04_self_bed",
+        "其他問題（請簡單描述：______）": "node_04_self_other"
+      }
+    },
+    "node_04_self_walking": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "走路不穩主要表現在哪裡？（多選）",
+      "options": [
+        "在屋裡走動需要扶著牆或傢俱",
+        "出門需要推助行器或坐輪椅",
+        "從椅子上站起來很費勁",
+        "需要做康復訓練恢復走路"
+      ],
+      "next": {
+        "在屋裡走動需要扶著牆或傢俱": "recommend_handrail",
+        "出門需要推助行器或坐輪椅": "recommend_mobility_aid",
+        "從椅子上站起來很費勁": "recommend_special_chair",
+        "需要做康復訓練恢復走路": "recommend_rehab_equipment"
+      }
+    },
+    "node_04_self_bathing": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "洗澡上廁所最危險的是什麼？（多選）",
+      "options": [
+        "浴室地滑，怕摔倒",
+        "坐下去站起來很困難",
+        "需要防滑墊和扶手",
+        "需要特殊椅子坐著洗"
+      ],
+      "next": {
+        "*": "recommend_bathing_toilet_aids"
+      }
+    },
+    "node_04_self_memory": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "記性變差主要帶來什麼困擾？（多選）",
+      "options": [
+        "忘記吃藥時間",
+        "忘記關煤氣或電器",
+        "出門會迷路找不到家",
+        "需要提醒重要事情"
+      ],
+      "next": {
+        "忘記吃藥時間": "recommend_elderly_aids",
+        "忘記關煤氣或電器": "recommend_smart_monitoring",
+        "出門會迷路找不到家": "recommend_smartwatch",
+        "需要提醒重要事情": "recommend_reminder_tool"
+      }
+    },
+    "node_04_self_pain": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "身體哪裡最痛或不舒服？（多選）",
+      "options": [
+        "膝蓋、腰背經常痛",
+        "坐久了屁股痛，怕長褥瘡",
+        "需要按摩或熱敷緩解",
+        "需要康復治療減輕疼痛"
+      ],
+      "next": {
+        "膝蓋、腰背經常痛": "recommend_pain_relief",
+        "坐久了屁股痛，怕長褥瘡": "recommend_pressure_cushion",
+        "需要按摩或熱敷緩解": "recommend_pain_relief",
+        "需要康復治療減輕疼痛": "recommend_rehab_equipment"
+      }
+    },
+    "node_04_self_lonely": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "情緒問題主要表現是什麼？（多選）",
+      "options": [
+        "經常一個人發呆，很孤獨",
+        "心情不好，容易發脾氣",
+        "希望有人陪著說話聊天",
+        "晚上睡不著，情緒焦慮"
+      ],
+      "next": {
+        "*": "recommend_companion_robot"
+      }
+    },
+    "node_04_self_eating": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "日常生活自己做不了的是什麼？（多選）",
+      "options": [
+        "拿筷子吃飯手抖",
+        "吞嚥困難，吃東西嗆到",
+        "穿衣服扣扣子很困難",
+        "需要特殊餐具輔助"
+      ],
+      "next": {
+        "拿筷子吃飯手抖": "recommend_eating_utensils",
+        "吞嚥困難，吃東西嗆到": "recommend_care_food",
+        "穿衣服扣扣子很困難": "recommend_elderly_aids",
+        "需要特殊餐具輔助": "recommend_eating_utensils"
+      }
+    },
+    "node_04_self_bed": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "臥床護理最需要改善的是？（多選）",
+      "options": [
+        "需要調節床的高度和角度",
+        "預防長褥瘡",
+        "方便翻身和移動",
+        "需要床上用餐"
+      ],
+      "next": {
+        "需要調節床的高度和角度": "recommend_nursing_bed",
+        "預防長褥瘡": "recommend_pressure_cushion",
+        "方便翻身和移動": "recommend_transfer_lift",
+        "需要床上用餐": "recommend_eating_utensils"
+      }
+    },
+    "node_04_self_other": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "請您簡單描述一下具體情況：（多選）",
+      "options": [
+        "需要在家做康復訓練",
+        "需要特殊床鋪改善睡眠",
+        "需要視力或聽力輔助",
+        "需要改善血液迴圈",
+        "需要認知訓練遊戲",
+        "不確定具體需要什麼"
+      ],
+      "next": {
+        "需要在家做康復訓練": "recommend_rehab_equipment",
+        "需要特殊床鋪改善睡眠": "recommend_nursing_bed",
+        "需要視力或聽力輔助": "recommend_smart_glasses",
+        "需要改善血液迴圈": "recommend_pain_relief",
+        "需要認知訓練遊戲": "recommend_elderly_aids",
+        "不確定具體需要什麼": "node_05_comprehensive_assessment"
+      }
+    },
+    "node_03_carer_worries": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "老人家最讓您擔心或最費勁的是什麼事？（多選）",
+      "options": [
+        "走路不穩，怕他摔倒",
+        "洗澡上廁所需要幫忙",
+        "會走失或忘關火",
+        "轉移抱動很吃力",
+        "老說身體痛",
+        "吃飯吞嚥困難",
+        "長期臥床需要護理",
+        "其他特別需求（請簡單描述：______）"
+      ],
+      "next": {
+        "走路不穩，怕他摔倒": "node_04_carer_walking",
+        "洗澡上廁所需要幫忙": "node_04_carer_bathing",
+        "會走失或忘關火": "node_04_carer_safety",
+        "轉移抱動很吃力": "node_04_carer_transfer",
+        "老說身體痛": "node_04_carer_pain",
+        "吃飯吞嚥困難": "node_04_carer_eating",
+        "長期臥床需要護理": "node_04_carer_bed",
+        "其他特別需求（請簡單描述：______）": "node_04_carer_other"
+      }
+    },
+    "node_04_carer_walking": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "走路不穩主要表現在哪裡？（多選）",
+      "options": [
+        "在屋裡走動需要扶著牆或傢俱",
+        "出門需要推助行器或坐輪椅",
+        "從椅子上站起來很費勁",
+        "需要做康復訓練恢復走路"
+      ],
+      "next": {
+        "在屋裡走動需要扶著牆或傢俱": "recommend_handrail",
+        "出門需要推助行器或坐輪椅": "recommend_mobility_aid",
+        "從椅子上站起來很費勁": "recommend_special_chair",
+        "需要做康復訓練恢復走路": "recommend_rehab_equipment"
+      }
+    },
+    "node_04_carer_bathing": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "洗澡上廁所最危險的是什麼？（多選）",
+      "options": [
+        "浴室地滑，怕摔倒",
+        "坐下去站起來很困難",
+        "需要防滑墊和扶手",
+        "需要特殊椅子坐著洗"
+      ],
+      "next": {
+        "*": "recommend_bathing_toilet_aids"
+      }
+    },
+    "node_04_carer_safety": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "最擔心的安全問題是什麼？（多選）",
+      "options": [
+        "老人家會自己跑出去走失",
+        "半夜會起床走動不安全",
+        "會忘記關火或水龍頭",
+        "需要24小時有人看著"
+      ],
+      "next": {
+        "老人家會自己跑出去走失": "recommend_smartwatch",
+        "半夜會起床走動不安全": "recommend_smart_monitoring",
+        "會忘記關火或水龍頭": "recommend_smart_monitoring",
+        "需要24小時有人看著": "recommend_smart_monitoring"
+      }
+    },
+    "node_04_carer_transfer": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "抱動轉移最困難的是什麼？（多選）",
+      "options": [
+        "從床上抱到輪椅上很費力",
+        "從輪椅到馬桶上很困難",
+        "自己抱不動，需要機械説明",
+        "需要減輕腰背負擔"
+      ],
+      "next": {
+        "*": "recommend_transfer_lift"
+      }
+    },
+    "node_04_carer_pain": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "身體哪裡最痛或不舒服？（多選）",
+      "options": [
+        "膝蓋、腰背經常痛",
+        "坐久了屁股痛，怕長褥瘡",
+        "需要按摩或熱敷緩解",
+        "需要康復治療減輕疼痛"
+      ],
+      "next": {
+        "膝蓋、腰背經常痛": "recommend_pain_relief",
+        "坐久了屁股痛，怕長褥瘡": "recommend_pressure_cushion",
+        "需要按摩或熱敷緩解": "recommend_pain_relief",
+        "需要康復治療減輕疼痛": "recommend_rehab_equipment"
+      }
+    },
+    "node_04_carer_eating": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "進食困難主要表現是？（多選）",
+      "options": [
+        "吞嚥困難，容易嗆到",
+        "手抖拿不住餐具",
+        "需要特殊質地食物",
+        "食欲不振需要營養補充"
+      ],
+      "next": {
+        "吞嚥困難，容易嗆到": "recommend_care_food",
+        "手抖拿不住餐具": "recommend_eating_utensils",
+        "需要特殊質地食物": "recommend_care_food",
+        "食欲不振需要營養補充": "recommend_care_food"
+      }
+    },
+    "node_04_carer_bed": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "臥床護理最需要改善的是？（多選）",
+      "options": [
+        "需要調節床的高度和角度",
+        "預防長褥瘡",
+        "方便翻身和移動",
+        "需要床上用餐"
+      ],
+      "next": {
+        "需要調節床的高度和角度": "recommend_nursing_bed",
+        "預防長褥瘡": "recommend_pressure_cushion",
+        "方便翻身和移動": "recommend_transfer_lift",
+        "需要床上用餐": "recommend_eating_utensils"
+      }
+    },
+    "node_04_carer_other": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "請您簡單描述一下具體情況：（多選）",
+      "options": [
+        "需要在家做康復訓練",
+        "需要特殊床鋪改善睡眠",
+        "需要視力或聽力輔助",
+        "需要改善血液迴圈",
+        "需要認知訓練遊戲",
+        "不確定具體需要什麼"
+      ],
+      "next": {
+        "需要在家做康復訓練": "recommend_rehab_equipment",
+        "需要特殊床鋪改善睡眠": "recommend_nursing_bed",
+        "需要視力或聽力輔助": "recommend_smart_glasses",
+        "需要改善血液迴圈": "recommend_pain_relief",
+        "需要認知訓練遊戲": "recommend_elderly_aids",
+        "不確定具體需要什麼": "node_05_comprehensive_assessment"
+      }
+    },
+    "node_05_comprehensive_assessment": {
+      "type": "single_choice",
+      "question": "老人家最近有沒有發生過這些安全事件？（單選，選最重要的一項）",
+      "options": [
+        "摔倒過或差點摔倒",
+        "忘記關火或水龍頭",
+        "走失或迷路過",
+        "吞嚥困難嗆到過",
+        "沒有發生過這些事件"
+      ],
+      "next": {
+        "摔倒過或差點摔倒": "node_05_fall_scene",
+        "忘記關火或水龍頭": "node_05_forget_reminder",
+        "走失或迷路過": "node_05_wander_risk",
+        "吞嚥困難嗆到過": "node_05_swallow_difficulty",
+        "沒有發生過這些事件": "node_06_quality_improve"
+      }
+    },
+    "node_05_fall_scene": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "跌倒主要發生在什麼場景？（多選）",
+      "options": [
+        "在浴室或廁所滑倒",
+        "在屋裡走路不穩摔倒",
+        "從椅子或床上起身時摔倒",
+        "出門在外摔倒"
+      ],
+      "next": {
+        "在浴室或廁所滑倒": "recommend_bathing_toilet_aids",
+        "在屋裡走路不穩摔倒": "recommend_handrail",
+        "從椅子或床上起身時摔倒": "recommend_special_chair",
+        "出門在外摔倒": "recommend_mobility_aid"
+      }
+    },
+    "node_05_forget_reminder": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "最擔心忘記做什麼？（多選）",
+      "options": [
+        "忘記吃藥",
+        "忘記關煤氣",
+        "忘記關水龍頭",
+        "需要多種提醒"
+      ],
+      "next": {
+        "*": "recommend_reminder_tool"
+      }
+    },
+    "node_05_wander_risk": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "走失風險主要在什麼時候？（多選）",
+      "options": [
+        "白天出門買菜走失",
+        "半夜起床走動走失",
+        "在陌生地方容易迷路",
+        "需要24小時定位"
+      ],
+      "next": {
+        "白天出門買菜走失": "recommend_smartwatch",
+        "半夜起床走動走失": "recommend_smart_monitoring",
+        "在陌生地方容易迷路": "recommend_smartwatch",
+        "需要24小時定位": "recommend_smart_monitoring"
+      }
+    },
+    "node_05_swallow_difficulty": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "吞嚥困難主要表現？（多選）",
+      "options": [
+        "吃固體食物容易嗆到",
+        "喝水容易嗆到",
+        "需要特殊質地食物",
+        "需要輔助餐具"
+      ],
+      "next": {
+        "吃固體食物容易嗆到": "recommend_care_food",
+        "喝水容易嗆到": "recommend_care_food",
+        "需要特殊質地食物": "recommend_care_food",
+        "需要輔助餐具": "recommend_eating_utensils"
+      }
+    },
+    "node_06_quality_improve": {
+      "type": "single_choice",
+      "question": "最想提升哪個方面的品質？（單選，選最重要的一項）",
+      "options": [
+        "減少身體疼痛",
+        "增加活動能力",
+        "改善睡眠品質",
+        "增強社交互動"
+      ],
+      "next": {
+        "減少身體疼痛": "node_06_pain_area",
+        "增加活動能力": "node_06_activity_improve",
+        "改善睡眠品質": "node_06_sleep_improve",
+        "增強社交互動": "node_06_social_improve"
+      }
+    },
+    "node_06_pain_area": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "疼痛主要部位？（多選）",
+      "options": [
+        "關節或肌肉疼痛",
+        "坐久了屁股痛",
+        "需要康復治療"
+      ],
+      "next": {
+        "關節或肌肉疼痛": "recommend_pain_relief",
+        "坐久了屁股痛": "recommend_pressure_cushion",
+        "需要康復治療": "recommend_rehab_equipment"
+      }
+    },
+    "node_06_activity_improve": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "需要改善的活動能力？（多選）",
+      "options": [
+        "恢復走路能力",
+        "增強肌肉力量",
+        "改善平衡能力"
+      ],
+      "next": {
+        "恢復走路能力": "recommend_rehab_equipment",
+        "增強肌肉力量": "recommend_sports_product",
+        "改善平衡能力": "recommend_rehab_equipment"
+      }
+    },
+    "node_06_sleep_improve": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "睡眠問題主要是什麼？（多選）",
+      "options": [
+        "床鋪不舒服",
+        "翻身困難",
+        "需要防褥瘡"
+      ],
+      "next": {
+        "床鋪不舒服": "recommend_nursing_bed",
+        "翻身困難": "recommend_nursing_bed",
+        "需要防褥瘡": "recommend_pressure_cushion"
+      }
+    },
+    "node_06_social_improve": {
+      "type": "multi_choice",
+      "multi_branch": true,
+      "question": "社交需求主要是？（多選）",
+      "options": [
+        "需要陪伴聊天",
+        "需要與家人聯繫",
+        "需要認知訓練遊戲"
+      ],
+      "next": {
+        "需要陪伴聊天": "recommend_companion_robot",
+        "需要與家人聯繫": "recommend_reminder_tool",
+        "需要認知訓練遊戲": "recommend_elderly_aids"
+      }
+    }
+  },
+  "recommend_nodes": {
+    "recommend_handrail": {
+      "type": "recommendation",
+      "is_terminal": true,
+      "category_id": "7",
+      "content": "推薦設備：扶手",
+      "device_tag": "7"
+    },
+    "recommend_mobility_aid": {
+      "type": "recommendation",
+      "is_terminal": true,
+      "category_id": "4",
+      "content": "推薦設備：行動輔助器材",
+      "device_tag": "4"
+    },
+    "recommend_special_chair": {
+      "type": "recommendation",
+      "is_terminal": true,
+      "category_id": "6",
+      "content": "推薦設備：特別用途座椅",
+      "device_tag": "6"
+    },
+    "recommend_rehab_equipment": {
+      "type": "recommendation",
+      "is_terminal": true,
+      "category_id": "3",
+      "content": "推薦設備：復康設備",
+      "device_tag": "3"
+    },
+    "recommend_bathing_toilet_aids": {
+      "type": "recommendation",
+      "is_terminal": true,
+      "category_id": "15",
+      "content": "推薦設備：沐浴及如廁輔助用品",
+      "device_tag": "15"
+    },
+    "recommend_reminder_tool": {
+      "type": "recommendation",
+      "is_terminal": true,
+      "category_id": "1",
+      "content": "推薦設備：通訊輔助工具",
+      "device_tag": "1"
+    },
+    "recommend_smartwatch": {
+      "type": "recommendation",
+      "is_terminal": true,
+      "category_id": "12",
+      "content": "推薦設備：智能手錶",
+      "device_tag": "12"
+    },
+    "recommend_pain_relief": {
+      "type": "recommendation",
+      "is_terminal": true,
+      "category_id": "10",
+      "content": "推薦設備：痛症舒緩",
+      "device_tag": "10"
+    },
+    "recommend_pressure_cushion": {
+      "type": "recommendation",
+      "is_terminal": true,
+      "category_id": "9",
+      "content": "推薦設備：減壓坐墊",
+      "device_tag": "9"
+    },
+    "recommend_companion_robot": {
+      "type": "recommendation",
+      "is_terminal": true,
+      "category_id": "14",
+      "content": "推薦設備：陪伴機械人",
+      "device_tag": "14"
+    },
+    "recommend_eating_utensils": {
+      "type": "recommendation",
+      "is_terminal": true,
+      "category_id": "16",
+      "content": "推薦設備：餵食用品",
+      "device_tag": "16"
+    },
+    "recommend_care_food": {
+      "type": "recommendation",
+      "is_terminal": true,
+      "category_id": "17",
+      "content": "推薦設備：照護食品",
+      "device_tag": "17"
+    },
+    "recommend_elderly_aids": {
+      "type": "recommendation",
+      "is_terminal": true,
+      "category_id": "18",
+      "content": "推薦設備：樂齡輔助用品",
+      "device_tag": "18"
+    },
+    "recommend_nursing_bed": {
+      "type": "recommendation",
+      "is_terminal": true,
+      "category_id": "5",
+      "content": "推薦設備：護理床及配件",
+      "device_tag": "5"
+    },
+    "recommend_transfer_lift": {
+      "type": "recommendation",
+      "is_terminal": true,
+      "category_id": "8",
+      "content": "推薦設備：移位機及配件",
+      "device_tag": "8"
+    },
+    "recommend_smart_glasses": {
+      "type": "recommendation",
+      "is_terminal": true,
+      "category_id": "13",
+      "content": "推薦設備：智能眼鏡",
+      "device_tag": "13"
+    },
+    "recommend_smart_monitoring": {
+      "type": "recommendation",
+      "is_terminal": true,
+      "category_id": "11",
+      "content": "推薦設備：智能健康監測",
+      "device_tag": "11"
+    },
+    "recommend_sports_product": {
+      "type": "recommendation",
+      "is_terminal": true,
+      "category_id": "2",
+      "content": "推薦設備：運動產品",
+      "device_tag": "2"
+    }
+  }
+}

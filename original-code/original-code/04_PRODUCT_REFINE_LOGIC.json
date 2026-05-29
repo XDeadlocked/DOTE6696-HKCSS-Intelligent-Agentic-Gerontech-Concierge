@@ -1,0 +1,658 @@
+{
+  "1": {
+    "name": "通訊輔助工具",
+    "mode": "recommend",
+    "question": "請問以下哪項最符合使用者的狀況？",
+    "options": [
+      {
+        "label": "1",
+        "text": "聽力比較差",
+        "recommend": "V543 / V340 / 電話來電提示器"
+      },
+      {
+        "label": "2",
+        "text": "獨居長者",
+        "recommend": "VOCA V141"
+      },
+      {
+        "label": "3",
+        "text": "中風復康或手部不靈活",
+        "recommend": "VOCA V340 / V543"
+      },
+      {
+        "label": "4",
+        "text": "手眼協調較弱",
+        "recommend": "V543"
+      },
+      {
+        "label": "5",
+        "text": "戴助聽器",
+        "recommend": "Heari RIC助聽器 / Heari 掛頸式助聽器"
+      },
+      {
+        "label": "6",
+        "text": "其他（請描述具體需求）",
+        "is_other": true
+      }
+    ]
+  },
+  "2": {
+    "name": "運動產品",
+    "mode": "recommend",
+    "question": "請選擇使用者目前最主要的運動目標及身體狀況：",
+    "options": [
+      {
+        "label": "1",
+        "text": "預防退化、想在家做日常全身活動",
+        "recommend": "智能家居運動系統 (TechFitX)"
+      },
+      {
+        "label": "2",
+        "text": "增加運動趣味，改善手部靈活度或認知能力",
+        "recommend": "「居家動樂」系列 (Alpha物理 / Beta認知)"
+      },
+      {
+        "label": "3",
+        "text": "針對手部復康訓練",
+        "recommend": "Cynteract 遊戲化感應手套 / Syrebo機械手套"
+      },
+      {
+        "label": "4",
+        "text": "增強步行能力或改善步態穩定性",
+        "recommend": "ZW568智能助行機器人 / Kickstart行機械腿"
+      },
+      {
+        "label": "5",
+        "text": "腦部保健及平衡評估",
+        "recommend": "腦電仿生電刺激儀 / 智能平衡腰帶"
+      },
+      {
+        "label": "6",
+        "text": "其他（請描述具體需求）",
+        "is_other": true
+      }
+    ]
+  },
+  "3": {
+    "name": "復康設備",
+    "mode": "nested",
+    "question": "請選擇使用者目前最需要針對改善的部位或目標：",
+    "options": [
+      {
+        "label": "1",
+        "text": "手部功能（中風復康、手指僵硬、想練習抓握）",
+        "followup": {
+          "question": "請選擇最符合的情況：",
+          "options": [
+            {
+              "label": "1",
+              "text": "追求趣味性與數據追蹤",
+              "recommend": "Cynteract 遊戲化感應手套"
+            },
+            {
+              "label": "2",
+              "text": "針對日常動作（如拿湯匙）",
+              "recommend": "Syrebo 機械手套"
+            },
+            {
+              "label": "3",
+              "text": "嚴重無力 / 需帶動練習",
+              "recommend": "空氣波壓力治療儀"
+            }
+          ]
+        }
+      },
+      {
+        "label": "2",
+        "text": "步行能力（中風後遺、髖部無力、步態不穩）",
+        "followup": {
+          "question": "請選擇最符合的情況：",
+          "options": [
+            {
+              "label": "1",
+              "text": "需要智能電力輔助",
+              "recommend": "ZW568智能助行機器人"
+            },
+            {
+              "label": "2",
+              "text": "追求輕便、不用充電（物理輔助）",
+              "recommend": "Kickstart奕行機械腿"
+            }
+          ]
+        }
+      },
+      {
+        "label": "3",
+        "text": "腦部健康與循環（失眠、記憶退化、肢體水腫）",
+        "followup": {
+          "question": "請選擇最符合的情況：",
+          "options": [
+            {
+              "label": "1",
+              "text": "改善睡眠與認知",
+              "recommend": "腦電仿生電刺激儀"
+            },
+            {
+              "label": "2",
+              "text": "減輕下肢水腫、預防血栓",
+              "recommend": "空氣波壓力治療儀"
+            }
+          ]
+        }
+      },
+      {
+        "label": "4",
+        "text": "全身機能與平衡（居家運動、預防跌倒、核心訓練）",
+        "followup": {
+          "question": "請選擇最符合的情況：",
+          "options": [
+            {
+              "label": "1",
+              "text": "想在家中做全身關節訓練",
+              "recommend": "TechFitX 智能家居運動系統"
+            },
+            {
+              "label": "2",
+              "text": "想測試平衡力，預防跌倒",
+              "recommend": "智能平衡腰帶"
+            }
+          ]
+        }
+      },
+      {
+        "label": "5",
+        "text": "其他（請描述具體需求）",
+        "is_other": true
+      }
+    ]
+  },
+  "4": {
+    "name": "行動輔助器材",
+    "mode": "nested",
+    "question": "請根據使用者目前的行動能力及主要用途作出選擇：",
+    "options": [
+      {
+        "label": "1",
+        "text": "還能走動，但想走長途、行山或上斜省力",
+        "followup": {
+          "question": "請選擇最符合的情況：",
+          "options": [
+            {
+              "label": "1",
+              "text": "追求強勁助力（上山/爬樓梯）",
+              "recommend": "行走助力運動機器人 - π"
+            },
+            {
+              "label": "2",
+              "text": "追求極致輕便（日常散步/慢跑）",
+              "recommend": "行走助力外骨骼機械人 Ant-H1 Pro"
+            },
+            {
+              "label": "3",
+              "text": "中風復康初期（需步態糾正）",
+              "recommend": "ZW568 智能助行機器人"
+            }
+          ]
+        }
+      },
+      {
+        "label": "2",
+        "text": "不太能走，想自行去遠點社交、逛商場",
+        "followup": {
+          "question": "請選擇最符合的情況：",
+          "options": [
+            {
+              "label": "1",
+              "text": "追求型格與多地越障",
+              "recommend": "WHILL Model R"
+            },
+            {
+              "label": "2",
+              "text": "需要經常折疊收納上車",
+              "recommend": "碳纖維電動輪椅 (12.1KG) 或 LiteWheel Pro (17KG)"
+            },
+            {
+              "label": "3",
+              "text": "高性價比、穩陣日常之選",
+              "recommend": "鋁合金電動輪椅"
+            }
+          ]
+        }
+      },
+      {
+        "label": "3",
+        "text": "出行安全第一，擔心跌倒或找不到老人家",
+        "followup": {
+          "question": "請選擇最符合的情況：",
+          "options": [
+            {
+              "label": "1",
+              "text": "想要全功能（定位/血壓監測/跌倒報警）",
+              "recommend": "安康手錶 X7"
+            },
+            {
+              "label": "2",
+              "text": "操作最簡單（一鍵呼救、掛頸式）",
+              "recommend": "緊急求救按鈕（智會愛）"
+            },
+            {
+              "label": "3",
+              "text": "戶外防走失 / 防騷擾",
+              "recommend": "旅行背包緊急警報器"
+            }
+          ]
+        }
+      },
+      {
+        "label": "4",
+        "text": "需要提升現有輪椅/椅子的舒適度，預防皮膚問題",
+        "followup": {
+          "question": "請選擇最符合的情況：",
+          "options": [
+            {
+              "label": "1",
+              "text": "全天候輪椅乘坐",
+              "recommend": "日本Exgel Owl Deep Contour Slim（貓頭鷹系列）"
+            },
+            {
+              "label": "2",
+              "text": "居家常用椅升級",
+              "recommend": "Exgel Hug Comfy"
+            }
+          ]
+        }
+      },
+      {
+        "label": "5",
+        "text": "只需要最基本、輕便的手杖輔助",
+        "followup": {
+          "question": "請選擇最符合的情況：",
+          "options": [
+            {
+              "label": "1",
+              "text": "追求輕量時尚",
+              "recommend": "白色/紅色花紋碳纖維單腳拐杖"
+            },
+            {
+              "label": "2",
+              "text": "解決手杖倒地問題",
+              "recommend": "日本制拐杖放置架"
+            }
+          ]
+        }
+      },
+      {
+        "label": "6",
+        "text": "其他（請描述具體需求）",
+        "is_other": true
+      }
+    ]
+  },
+  "5": {
+    "name": "護理床及配件",
+    "mode": "no_product",
+    "question": "請選擇您目前最需要的功能：",
+    "options": [
+      {
+        "label": "1",
+        "text": "升降背部及腿部"
+      },
+      {
+        "label": "2",
+        "text": "全床升降，方便照顧者餵食或換片，減輕腰傷"
+      },
+      {
+        "label": "3",
+        "text": "側翻功能，方便翻身，預防壓瘡"
+      },
+      {
+        "label": "4",
+        "text": "其他（請描述具體需求）",
+        "is_other": true
+      }
+    ]
+  },
+  "6": {
+    "name": "特別用途椅",
+    "mode": "no_product",
+    "question": "使用者目前的起坐能力？",
+    "options": [
+      {
+        "label": "1",
+        "text": "有少許力，但怕滑腳"
+      },
+      {
+        "label": "2",
+        "text": "久坐容易累"
+      },
+      {
+        "label": "3",
+        "text": "其他（請描述具體需求）",
+        "is_other": true
+      }
+    ]
+  },
+  "7": {
+    "name": "扶手",
+    "mode": "no_product",
+    "question": "居住環境是否方便鑽牆安裝？",
+    "options": [
+      {
+        "label": "1",
+        "text": "可以鑽牆"
+      },
+      {
+        "label": "2",
+        "text": "需要免鑽牆、撐桿式或夾式扶手"
+      },
+      {
+        "label": "3",
+        "text": "其他（請描述具體需求）",
+        "is_other": true
+      }
+    ]
+  },
+  "8": {
+    "name": "移位機及配件",
+    "mode": "recommend",
+    "question": "請選出最符合您情況的描述：",
+    "options": [
+      {
+        "label": "1",
+        "text": "照顧者力氣較小，抱動老人家時感到腰背吃力",
+        "recommend": "蘇州西頓家用自動化有限公司 - 電動護理移位機"
+      },
+      {
+        "label": "2",
+        "text": "家裡空間比較窄",
+        "recommend": "蘇州西頓家用自動化有限公司 - 電動護理移位機"
+      },
+      {
+        "label": "3",
+        "text": "老人家下肢完全無力，需要頻繁在床、輪椅、馬桶之間轉移",
+        "recommend": "蘇州西頓家用自動化有限公司 - 電動護理移位機"
+      },
+      {
+        "label": "4",
+        "text": "其他（請描述具體需求）",
+        "is_other": true
+      }
+    ]
+  },
+  "9": {
+    "name": "減壓坐墊",
+    "mode": "recommend",
+    "question": "請根據日常使用的座椅及身體感受作出選擇：",
+    "options": [
+      {
+        "label": "1",
+        "text": "主要是輪椅使用者，或者身體比較消瘦、容易坐到屁股痛",
+        "recommend": "Exgel Owl Deep Contour Slim"
+      },
+      {
+        "label": "2",
+        "text": "主要是坐家中沙發或扶手椅，經常覺得腰酸背痛坐不穩",
+        "recommend": "Exgel Hug Comfy"
+      },
+      {
+        "label": "3",
+        "text": "其他（請描述具體需求）",
+        "is_other": true
+      }
+    ]
+  },
+  "10": {
+    "name": "痛症舒緩",
+    "mode": "recommend",
+    "question": "請選出使用者最感到不適的部位及使用習慣：",
+    "options": [
+      {
+        "label": "1",
+        "text": "經常頸僵硬、肩膀痛，或想在家大範圍熱敷",
+        "recommend": "傳承醫療 - 理療電熱墊 / 肩頸墊"
+      },
+      {
+        "label": "2",
+        "text": "膝蓋/關節長期酸痛，或者小腿容易夜間抽筋",
+        "recommend": "KnitWarm 智能發熱護膝 / 織暖腳套"
+      },
+      {
+        "label": "3",
+        "text": "經常「低頭」頸緊或者肩膀受過傷需要靈活熱敷",
+        "recommend": "織暖小頸巾 / 肩暖護帶"
+      },
+      {
+        "label": "4",
+        "text": "眼睛疲勞、失眠，或者坐得覺髖關節/腰部冰涼",
+        "recommend": "織暖眼罩 2.0 / 溫享座墊"
+      },
+      {
+        "label": "5",
+        "text": "想要一件多功能、可以帶去旅行或在車用的保暖產品",
+        "recommend": "四合一智能暖毯咕𠱸 / 智能保健暖帶"
+      },
+      {
+        "label": "6",
+        "text": "其他（請描述具體需求）",
+        "is_other": true
+      }
+    ]
+  },
+  "11": {
+    "name": "智能健康監測",
+    "mode": "nested",
+    "question": "您目前最想解決或最擔心的情況是？",
+    "options": [
+      {
+        "label": "1",
+        "text": "跌倒風險即時求助（特別是浴室或半夜落床）",
+        "followup": {
+          "question": "請選擇最符合的使用場景：",
+          "options": [
+            {
+              "label": "1",
+              "text": "浴室",
+              "recommend": "VOCA SPA13緊急防水按鈕、VOCA SPA09 拉繩緊急呼叫器"
+            },
+            {
+              "label": "2",
+              "text": "床邊離床",
+              "recommend": "VOCA VP16智能離床警報器、LUNA露娜貓、防跌感應床墊套裝"
+            },
+            {
+              "label": "3",
+              "text": "主動求助",
+              "recommend": "SOS無線呼叫器、智能求救語伴（語音求救）"
+            }
+          ]
+        }
+      },
+      {
+        "label": "2",
+        "text": "睡眠品質與維生指標監控（心率、呼吸、血糖/血壓）",
+        "recommend": "體徵偵測雷達、家用生命體徵監測儀(XK300-H)、雷達呼吸心率監測床頭燈、四合一智能健康檢測儀、DynasynQ智能表、無創血糖監測設備、安康手錶x7、壓護衛無線血壓計"
+      },
+      {
+        "label": "3",
+        "text": "失智症防遊走與室內活動規律監察",
+        "recommend": "VOCA SPA05 門/窗感應器、無線防遊走套裝、智齡生活家居系統、Sentiare 智能活動感應系統、VOCA SPA07紅外線探測PIR"
+      },
+      {
+        "label": "4",
+        "text": "全方位居家環境安全（火災、氣體、漏水）",
+        "recommend": "SPA08 煙霧探測器、SPA11 氣體探測器、VOCA SPA15 漏水探測器"
+      },
+      {
+        "label": "5",
+        "text": "其他（請描述具體需求）",
+        "is_other": true
+      }
+    ]
+  },
+  "12": {
+    "name": "智能手錶",
+    "mode": "recommend",
+    "question": "在挑選智能手錶時，您最希望解決哪方面的問題？",
+    "options": [
+      {
+        "label": "1",
+        "text": "外出安全與緊急求助（怕走失、怕跌倒、需要即時聯絡）",
+        "recommend": "安康手錶x7"
+      },
+      {
+        "label": "2",
+        "text": "慢性病預防與數據追蹤（特別關注血糖、心電圖ECG、血管健康）",
+        "recommend": "DynasynQ智能手錶"
+      },
+      {
+        "label": "3",
+        "text": "其他（請描述具體需求）",
+        "is_other": true
+      }
+    ]
+  },
+  "13": {
+    "name": "智能眼鏡",
+    "mode": "recommend",
+    "question": "您認為目前最需要強化的「視覺補充」是哪一方面？",
+    "options": [
+      {
+        "label": "1",
+        "text": "戶外獨立出行的導航與避障安全（怕撞到障礙物或迷路）",
+        "recommend": "笪光導盲眼鏡"
+      },
+      {
+        "label": "2",
+        "text": "遠端實時協助與生活場景辨識（需要真人或AI協助看清環境）",
+        "recommend": "笪光導盲眼鏡"
+      },
+      {
+        "label": "3",
+        "text": "其他（請描述具體需求）",
+        "is_other": true
+      }
+    ]
+  },
+  "14": {
+    "name": "陪伴機器人",
+    "mode": "recommend",
+    "question": "在挑選陪伴夥伴時，您最需要哪種形式的情感慰藉？",
+    "options": [
+      {
+        "label": "1",
+        "text": "想要如同「真寵物」般的溫暖觸感與生理回饋（不便養真貓狗、需療癒感）",
+        "recommend": "模擬貓 / Chongker MateCat"
+      },
+      {
+        "label": "2",
+        "text": "想要如同「乖孫/老友」般的對話交流（認知障礙初期、想有人傾偈）",
+        "recommend": "童童AI / 小彬 / AI陪伴小熊 / AI企鵝"
+      },
+      {
+        "label": "3",
+        "text": "需要「照顧他人」的責任與情感寄託（認知障礙中后期、安撫不安情緒）",
+        "recommend": "陪伴娃娃"
+      },
+      {
+        "label": "4",
+        "text": "喜歡智力挑戰與科技互動（活躍長者、想訓練腦力）",
+        "recommend": "元蔔AI下棋機器人 / 衛小鹿機器狗"
+      },
+      {
+        "label": "5",
+        "text": "其他（請描述具體需求）",
+        "is_other": true
+      }
+    ]
+  },
+  "15": {
+    "name": "淋浴及如廁輔助用品",
+    "mode": "no_product",
+    "question": "暫時未有具體產品選項",
+    "options": [
+      {
+        "label": "1",
+        "text": "其他（請描述具體需求）",
+        "is_other": true
+      }
+    ]
+  },
+  "16": {
+    "name": "餵食用品",
+    "mode": "recommend",
+    "question": "在進餐時，手部活動主要遇到哪種困難？",
+    "options": [
+      {
+        "label": "1",
+        "text": "手震",
+        "recommend": "Gyenno Bravo Twist 睿餐智能防抖匙"
+      },
+      {
+        "label": "2",
+        "text": "手指僵硬、難以抓握",
+        "recommend": "Gyenno Bravo Twist 睿餐智能防抖匙"
+      },
+      {
+        "label": "3",
+        "text": "其他（請描述具體需求）",
+        "is_other": true
+      }
+    ]
+  },
+  "17": {
+    "name": "照護食品",
+    "mode": "redirect",
+    "question": "吞嚥困難的程度",
+    "options": [
+      {
+        "label": "1",
+        "text": "飲水易嗆到"
+      },
+      {
+        "label": "2",
+        "text": "咬不到硬物"
+      },
+      {
+        "label": "3",
+        "text": "胃口差、營養不足"
+      },
+      {
+        "label": "4",
+        "text": "其他（請描述具體需求）",
+        "is_other": true
+      }
+    ]
+  },
+  "18": {
+    "name": "樂齡輔助用品",
+    "mode": "recommend",
+    "question": "在日常家居生活中，您最希望在哪方面獲得「智能科技」的協助？",
+    "options": [
+      {
+        "label": "1",
+        "text": "藥物與健康管理（怕漏食藥、想瞭解腸道健康）",
+        "recommend": "智能藥物管理系統 / GUTolution腸道微生態全面測試"
+      },
+      {
+        "label": "2",
+        "text": "居家感官提醒與安全（聽不清電話聲、倒水怕滿瀉、看不清時間）",
+        "recommend": "電話來電提示器 / 水位感測器 / 說話鬧鐘"
+      },
+      {
+        "label": "3",
+        "text": "緊急求助與隨身守護（發生意外時能即時通知家人）",
+        "recommend": "緊急求救按鈕（SOS鍵）"
+      },
+      {
+        "label": "4",
+        "text": "肩頸與健康護理（舒緩勞損、高效防護）",
+        "recommend": "頸舒儀 / 織暖頸繩 / NASK納米殺菌呼吸器"
+      },
+      {
+        "label": "5",
+        "text": "其他（請描述具體需求）",
+        "is_other": true
+      }
+    ]
+  }
+}
