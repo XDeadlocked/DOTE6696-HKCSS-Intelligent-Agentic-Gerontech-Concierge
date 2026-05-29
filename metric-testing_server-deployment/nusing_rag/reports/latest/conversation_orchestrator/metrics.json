@@ -1,0 +1,7 @@
+{
+  "route_accuracy": 1.0,
+  "end_to_end_success_rate": 1.0,
+  "event_sequence_validity": 1.0,
+  "session_consistency_rate": 1.0,
+  "llm_resilience_success_rate": 0.3333
+}

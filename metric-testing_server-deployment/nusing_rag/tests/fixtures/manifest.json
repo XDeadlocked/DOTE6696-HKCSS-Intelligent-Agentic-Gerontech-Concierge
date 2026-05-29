@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-05-20",
+  "modules": {
+    "intent_router": {
+      "guardrail_cases": 100,
+      "intent_cases": 104,
+      "llm_boundary_cases": 8
+    },
+    "logic_rule": {
+      "transition_cases": 124,
+      "invalid_input_cases": 31,
+      "scenario_cases": 104,
+      "presentation_cases": 16
+    },
+    "device_followup": {
+      "initial_cases": 47,
+      "nested_cases": 25,
+      "fallback_cases": 18
+    },
+    "product_catalog": {
+      "category_browse_cases": 38,
+      "product_detail_cases": 37,
+      "pagination_cases": 19
+    },
+    "inventory_search": {
+      "exact_match_cases": 37,
+      "semantic_cases": 37,
+      "llm_rerank_cases": 12,
+      "llm_fallback_cases": 6
+    },
+    "nursing_rag": {
+      "evalset": 24,
+      "medical_reject_cases": 6,
+      "knowledge_fallback_cases": 6,
+      "judge_cases": 12
+    },
+    "conversation_orchestrator": {
+      "scenarios": 30,
+      "llm_resilience_scenarios": 6
+    }
+  }
+}

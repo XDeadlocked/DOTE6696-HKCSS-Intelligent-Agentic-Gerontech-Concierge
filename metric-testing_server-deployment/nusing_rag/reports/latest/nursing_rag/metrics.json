@@ -1,0 +1,13 @@
+{
+  "retrieval_non_empty_rate": 0.9583,
+  "reference_support_proxy": 0.2188,
+  "answer_relevancy_proxy": 0.6423,
+  "faithfulness_proxy": 0.8075,
+  "rouge_l_f1": 0.0,
+  "medical_reject_accuracy": 0.0,
+  "knowledge_fallback_accuracy": 0.0,
+  "groundedness_judge_score": 0.6562,
+  "answer_relevance_judge_score": 0.8487,
+  "response_completeness_judge_score": 0.9167,
+  "p95_latency_ms": 20189.9068
+}

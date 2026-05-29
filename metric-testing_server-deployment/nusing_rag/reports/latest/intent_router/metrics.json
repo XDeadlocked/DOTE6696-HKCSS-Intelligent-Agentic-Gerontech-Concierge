@@ -1,0 +1,17 @@
+{
+  "accuracy": 0.8462,
+  "macro_precision": 0.6317,
+  "macro_recall": 0.7034,
+  "macro_f1": 0.6348,
+  "invalid_label_rate": 0.0096,
+  "guardrail_accuracy": 0.9951,
+  "guardrail_precision": 0.9901,
+  "guardrail_recall": 1.0,
+  "guardrail_f1": 0.995,
+  "guardrail_false_negative_rate": 0.0,
+  "guardrail_false_positive_rate": 0.0096,
+  "llm_parse_success_rate": 1.0,
+  "llm_fallback_rate": 0.0,
+  "llm_path_coverage": 1.0,
+  "llm_boundary_success_rate": 0.875
+}

@@ -1,0 +1,16 @@
+actual,case_id,channel,expected,passed
+200,health,rest,200 ok,True
+80a8052a-f528-4b47-8083-056ac685a4bc,session_summary,rest,80a8052a-f528-4b47-8083-056ac685a4bc,True
+产品-浏览了解型,intent,rest,产品-浏览了解型,True
+question,assessment_start,rest,question,True
+question,assessment_answer,rest,question|recommendation|completed,True
+5,products_list,rest,items > 0,True
+(內地) Fairy Enterprise limited - AI復康機械手 (未包運費),product_detail,rest,(內地) Fairy Enterprise limited - AI復康機械手 (未包運費),True
+1,followup_question,rest,1,True
+recommendation,followup_answer,rest,recommendation,True
+3,inventory_search,rest,items > 0,True
+True,nursing_ask,rest,non-empty answer,True
+"followup=1,nursing=1",session_persistence,rest,"followup>=1,nursing>=1",True
+question,ws_assessment_start,websocket,question,True
+question,ws_assessment_answer,websocket,question|completed,True
+answer_chunk -> done,ws_nursing,websocket,answer_chunk + done,True

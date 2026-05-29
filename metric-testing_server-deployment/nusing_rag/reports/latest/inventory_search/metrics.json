@@ -1,0 +1,13 @@
+{
+  "strict_hit_at_1": 1.0,
+  "strict_mrr": 1.0,
+  "semantic_hit_at_5": 0.973,
+  "semantic_precision_at_5": 0.1946,
+  "semantic_recall_at_5": 0.973,
+  "semantic_mrr": 0.8577,
+  "semantic_ndcg_at_5": 0.8856,
+  "llm_rerank_success_rate": 1.0,
+  "llm_fallback_rate": 0.0,
+  "rerank_uplift_rate": 0.0833,
+  "llm_failure_recovery_rate": 1.0
+}

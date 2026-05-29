@@ -1,0 +1,8 @@
+{
+  "category_match_accuracy": 1.0,
+  "product_detail_exact_match_rate": 1.0,
+  "description_excerpt_match_rate": 0.9189,
+  "detail_field_completeness": 0.9122,
+  "pagination_correctness": 1.0,
+  "null_field_rate": 0.0878
+}

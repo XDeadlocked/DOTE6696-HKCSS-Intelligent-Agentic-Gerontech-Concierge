@@ -1,0 +1,91 @@
+case_id,expected,passed,predicted,task
+df_initial_1_1,recommend,True,recommend,initial
+df_initial_1_2,recommend,True,recommend,initial
+df_initial_1_3,recommend,True,recommend,initial
+df_initial_1_4,recommend,True,recommend,initial
+df_initial_1_5,recommend,True,recommend,initial
+df_initial_2_1,recommend,True,recommend,initial
+df_initial_2_2,recommend,True,recommend,initial
+df_initial_2_3,recommend,True,recommend,initial
+df_initial_2_4,recommend,True,recommend,initial
+df_initial_2_5,recommend,True,recommend,initial
+df_initial_5_1,no_product,True,no_product,initial
+df_initial_5_2,no_product,True,no_product,initial
+df_initial_5_3,no_product,True,no_product,initial
+df_initial_6_1,no_product,True,no_product,initial
+df_initial_6_2,no_product,True,no_product,initial
+df_initial_7_1,no_product,True,no_product,initial
+df_initial_7_2,no_product,True,no_product,initial
+df_initial_8_1,recommend,True,recommend,initial
+df_initial_8_2,recommend,True,recommend,initial
+df_initial_8_3,recommend,True,recommend,initial
+df_initial_9_1,recommend,True,recommend,initial
+df_initial_9_2,recommend,True,recommend,initial
+df_initial_10_1,recommend,True,recommend,initial
+df_initial_10_2,recommend,True,recommend,initial
+df_initial_10_3,recommend,True,recommend,initial
+df_initial_10_4,recommend,True,recommend,initial
+df_initial_10_5,recommend,True,recommend,initial
+df_initial_11_2,recommend,True,recommend,initial
+df_initial_11_3,recommend,True,recommend,initial
+df_initial_11_4,recommend,True,recommend,initial
+df_initial_12_1,recommend,True,recommend,initial
+df_initial_12_2,recommend,True,recommend,initial
+df_initial_13_1,recommend,True,recommend,initial
+df_initial_13_2,recommend,True,recommend,initial
+df_initial_14_1,recommend,True,recommend,initial
+df_initial_14_2,recommend,True,recommend,initial
+df_initial_14_3,recommend,True,recommend,initial
+df_initial_14_4,recommend,True,recommend,initial
+df_initial_16_1,recommend,True,recommend,initial
+df_initial_16_2,recommend,True,recommend,initial
+df_initial_17_1,redirect,True,redirect,initial
+df_initial_17_2,redirect,True,redirect,initial
+df_initial_17_3,redirect,True,redirect,initial
+df_initial_18_1,recommend,True,recommend,initial
+df_initial_18_2,recommend,True,recommend,initial
+df_initial_18_3,recommend,True,recommend,initial
+df_initial_18_4,recommend,True,recommend,initial
+df_nested_3_1_1,Cynteract 遊戲化感應手套,True,Cynteract 遊戲化感應手套,nested
+df_nested_3_1_2,Syrebo 機械手套,True,Syrebo 機械手套,nested
+df_nested_3_1_3,空氣波壓力治療儀,True,空氣波壓力治療儀,nested
+df_nested_3_2_1,ZW568智能助行機器人,True,ZW568智能助行機器人,nested
+df_nested_3_2_2,Kickstart奕行機械腿,True,Kickstart奕行機械腿,nested
+df_nested_3_3_1,腦電仿生電刺激儀,True,腦電仿生電刺激儀,nested
+df_nested_3_3_2,空氣波壓力治療儀,True,空氣波壓力治療儀,nested
+df_nested_3_4_1,TechFitX 智能家居運動系統,True,TechFitX 智能家居運動系統,nested
+df_nested_3_4_2,智能平衡腰帶,True,智能平衡腰帶,nested
+df_nested_4_1_1,行走助力運動機器人 - π,True,行走助力運動機器人 - π,nested
+df_nested_4_1_2,行走助力外骨骼機械人 Ant-H1 Pro,True,行走助力外骨骼機械人 Ant-H1 Pro,nested
+df_nested_4_1_3,ZW568 智能助行機器人,True,ZW568 智能助行機器人,nested
+df_nested_4_2_1,WHILL Model R,True,WHILL Model R,nested
+df_nested_4_2_2,碳纖維電動輪椅 (12.1KG) 或 LiteWheel Pro (17KG),True,碳纖維電動輪椅 (12.1KG) 或 LiteWheel Pro (17KG),nested
+df_nested_4_2_3,鋁合金電動輪椅,True,鋁合金電動輪椅,nested
+df_nested_4_3_1,安康手錶 X7,True,安康手錶 X7,nested
+df_nested_4_3_2,緊急求救按鈕（智會愛）,True,緊急求救按鈕（智會愛）,nested
+df_nested_4_3_3,旅行背包緊急警報器,True,旅行背包緊急警報器,nested
+df_nested_4_4_1,日本Exgel Owl Deep Contour Slim（貓頭鷹系列）,True,日本Exgel Owl Deep Contour Slim（貓頭鷹系列）,nested
+df_nested_4_4_2,Exgel Hug Comfy,True,Exgel Hug Comfy,nested
+df_nested_4_5_1,白色/紅色花紋碳纖維單腳拐杖,True,白色/紅色花紋碳纖維單腳拐杖,nested
+df_nested_4_5_2,日本制拐杖放置架,True,日本制拐杖放置架,nested
+df_nested_11_1_1,VOCA SPA13緊急防水按鈕、VOCA SPA09 拉繩緊急呼叫器,True,VOCA SPA13緊急防水按鈕、VOCA SPA09 拉繩緊急呼叫器,nested
+df_nested_11_1_2,VOCA VP16智能離床警報器、LUNA露娜貓、防跌感應床墊套裝,True,VOCA VP16智能離床警報器、LUNA露娜貓、防跌感應床墊套裝,nested
+df_nested_11_1_3,SOS無線呼叫器、智能求救語伴（語音求救）,True,SOS無線呼叫器、智能求救語伴（語音求救）,nested
+df_other_1_6,fallback_to_free_text,True,inventory_search,fallback
+df_other_2_6,fallback_to_free_text,True,inventory_search,fallback
+df_other_3_5,fallback_to_free_text,True,inventory_search,fallback
+df_other_4_6,fallback_to_free_text,True,inventory_search,fallback
+df_other_5_4,fallback_to_free_text,True,inventory_search,fallback
+df_other_6_3,fallback_to_free_text,True,inventory_search,fallback
+df_other_7_3,fallback_to_free_text,True,inventory_search,fallback
+df_other_8_4,fallback_to_free_text,True,inventory_search,fallback
+df_other_9_3,fallback_to_free_text,True,inventory_search,fallback
+df_other_10_6,fallback_to_free_text,True,inventory_search,fallback
+df_other_11_5,fallback_to_free_text,True,inventory_search,fallback
+df_other_12_3,fallback_to_free_text,True,inventory_search,fallback
+df_other_13_3,fallback_to_free_text,True,inventory_search,fallback
+df_other_14_5,fallback_to_free_text,True,inventory_search,fallback
+df_other_15_1,fallback_to_free_text,True,inventory_search,fallback
+df_other_16_3,fallback_to_free_text,True,inventory_search,fallback
+df_other_17_4,fallback_to_free_text,True,inventory_search,fallback
+df_other_18_5,fallback_to_free_text,True,inventory_search,fallback

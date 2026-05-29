@@ -1,0 +1,8 @@
+{
+  "node_transition_accuracy": 1.0,
+  "invalid_input_recovery_rate": 1.0,
+  "scenario_success_rate": 1.0,
+  "question_presentation_success_rate": 1.0,
+  "recommendation_presentation_success_rate": 1.0,
+  "local_rule_exact_match_rate": 1.0
+}

@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "description": "Boundary and noisy inputs for LLM-first intent routing",
+    "evaluation_mode": "llm_parse_and_fallback_robustness"
+  },
+  "cases": [
+    {
+      "case_id": "ir_llm_boundary_001",
+      "input": "轮椅？",
+      "expected_primary_intent": "product_catalog",
+      "expected_allowed_fallbacks": [
+        "inventory_search"
+      ],
+      "difficulty": "short_query"
+    },
+    {
+      "case_id": "ir_llm_boundary_002",
+      "input": "我想问下照顾失智长者夜晚乱叫要点处理",
+      "expected_primary_intent": "nursing_rag",
+      "expected_allowed_fallbacks": [],
+      "difficulty": "cantonese_mixed"
+    },
+    {
+      "case_id": "ir_llm_boundary_003",
+      "input": "想睇下有冇扶手，同埋老人成日跌倒点算",
+      "expected_primary_intent": "logic_rule",
+      "expected_allowed_fallbacks": [
+        "inventory_search"
+      ],
+      "difficulty": "multi_intent"
+    },
+    {
+      "case_id": "ir_llm_boundary_004",
+      "input": "AI rehab glove 有吗？",
+      "expected_primary_intent": "inventory_search",
+      "expected_allowed_fallbacks": [
+        "product_catalog"
+      ],
+      "difficulty": "code_switching"
+    },
+    {
+      "case_id": "ir_llm_boundary_005",
+      "input": "翻身呢？",
+      "expected_primary_intent": "nursing_rag",
+      "expected_allowed_fallbacks": [],
+      "difficulty": "ellipsis"
+    },
+    {
+      "case_id": "ir_llm_boundary_006",
+      "input": "帮家人揀沖涼椅，最好可以先了解再推荐",
+      "expected_primary_intent": "logic_rule",
+      "expected_allowed_fallbacks": [
+        "product_catalog",
+        "inventory_search"
+      ],
+      "difficulty": "recommendation_vs_browse"
+    },
+    {
+      "case_id": "ir_llm_boundary_007",
+      "input": "老人记忆越来越差，是不是病？",
+      "expected_primary_intent": "nursing_rag",
+      "expected_allowed_fallbacks": [],
+      "difficulty": "medical_sensitive"
+    },
+    {
+      "case_id": "ir_llm_boundary_008",
+      "input": "請介紹有定位功能嘅智能手錶",
+      "expected_primary_intent": "product_catalog",
+      "expected_allowed_fallbacks": [
+        "inventory_search"
+      ],
+      "difficulty": "traditional_chinese"
+    }
+  ]
+}

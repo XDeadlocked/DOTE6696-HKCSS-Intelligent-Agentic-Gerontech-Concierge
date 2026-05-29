@@ -1,0 +1,5 @@
+{
+  "health_status_code": 200,
+  "session_bindings": 1,
+  "session_backend": "memory"
+}

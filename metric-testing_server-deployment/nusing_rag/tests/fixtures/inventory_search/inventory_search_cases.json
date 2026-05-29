@@ -1,0 +1,918 @@
+{
+  "meta": {
+    "sources": [
+      "01_PRODUCT_MASTER_BASE.csv",
+      "03_PRODUCT_INFO.json"
+    ],
+    "evaluation_mode": "hybrid_ranker_plus_llm_rerank"
+  },
+  "exact_match_cases": [
+    {
+      "case_id": "is_exact_001",
+      "query": "中心職業治療評估及諮詢服務",
+      "mode": "strict",
+      "expected_product_name": "中心職業治療評估及諮詢服務",
+      "expected_category_name": "其他",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_002",
+      "query": "上門家居評估",
+      "mode": "strict",
+      "expected_product_name": "上門家居評估",
+      "expected_category_name": "其他",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_003",
+      "query": "(內地) Fairy Enterprise limited - AI復康機械手 (未包運費)",
+      "mode": "strict",
+      "expected_product_name": "(內地) Fairy Enterprise limited - AI復康機械手 (未包運費)",
+      "expected_category_name": "復康設備",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_004",
+      "query": "(內地) Fairy Enterprise limited - 智能髖關節外骨骼 (未包運費)",
+      "mode": "strict",
+      "expected_product_name": "(內地) Fairy Enterprise limited - 智能髖關節外骨骼 (未包運費)",
+      "expected_category_name": "復康設備",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_005",
+      "query": "床邊扶手",
+      "mode": "strict",
+      "expected_product_name": "床邊扶手",
+      "expected_category_name": "扶手",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_006",
+      "query": "J1-001_多用途扶手 - PN",
+      "mode": "strict",
+      "expected_product_name": "J1-001_多用途扶手 - PN",
+      "expected_category_name": "扶手",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_007",
+      "query": "(內地) Shun Hing Technology Co., Ltd. - DynasynQ 無創葡萄糖監測手錶 (未包運費)",
+      "mode": "strict",
+      "expected_product_name": "(內地) Shun Hing Technology Co., Ltd. - DynasynQ 無創葡萄糖監測手錶 (未包運費)",
+      "expected_category_name": "智能健康監測",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_008",
+      "query": "(內地) Smart Idea Health Technology Limited - 阿爾茨海默症尿液快篩試劑盒 (鑒忘Qankorey) (未包運費)",
+      "mode": "strict",
+      "expected_product_name": "(內地) Smart Idea Health Technology Limited - 阿爾茨海默症尿液快篩試劑盒 (鑒忘Qankorey) (未包運費)",
+      "expected_category_name": "智能健康監測",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_009",
+      "query": "(內地) 上海繪神醫療科技有限公司 - Stable手環 (未包運費)",
+      "mode": "strict",
+      "expected_product_name": "(內地) 上海繪神醫療科技有限公司 - Stable手環 (未包運費)",
+      "expected_category_name": "智能手錶",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_010",
+      "query": "智能手錶",
+      "mode": "strict",
+      "expected_product_name": "智能手錶",
+      "expected_category_name": "智能手錶",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_011",
+      "query": "(內地) 上海笪光科技有限公司 - 笪光導盲眼鏡 (未包運費)",
+      "mode": "strict",
+      "expected_product_name": "(內地) 上海笪光科技有限公司 - 笪光導盲眼鏡 (未包運費)",
+      "expected_category_name": "智能眼鏡",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_012",
+      "query": "(內地) Medical Technologies Limited - Green Breeze - Air Purifier 醫療級別空氣淨化機 (已包運費)",
+      "mode": "strict",
+      "expected_product_name": "(內地) Medical Technologies Limited - Green Breeze - Air Purifier 醫療級別空氣淨化機 (已包運費)",
+      "expected_category_name": "樂齡輔助用品",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_013",
+      "query": "(內地) 上海三思電子工程有限公司 - 紅外線小夜燈 (未包運費)",
+      "mode": "strict",
+      "expected_product_name": "(內地) 上海三思電子工程有限公司 - 紅外線小夜燈 (未包運費)",
+      "expected_category_name": "樂齡輔助用品",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_014",
+      "query": "(香港) NASK Technology Company Limited - NASK 納米纖維成人尿片 (未包運費)",
+      "mode": "strict",
+      "expected_product_name": "(香港) NASK Technology Company Limited - NASK 納米纖維成人尿片 (未包運費)",
+      "expected_category_name": "沐浴及如廁輔助用品",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_015",
+      "query": "[徵求 - 物資] 沖涼椅",
+      "mode": "strict",
+      "expected_product_name": "[徵求 - 物資] 沖涼椅",
+      "expected_category_name": "沐浴及如廁輔助用品",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_016",
+      "query": "(香港) Knitwarm Limited「溫享座墊」 + 5000mAh 行動電源 (顏色: City Twilight) - (已包運費 - 離島區除外)",
+      "mode": "strict",
+      "expected_product_name": "(香港) Knitwarm Limited「溫享座墊」 + 5000mAh 行動電源 (顏色: City Twilight) - (已包運費 - 離島區除外)",
+      "expected_category_name": "減壓坐墊",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_017",
+      "query": "(香港) Knit Warm - 「溫享座墊」 + 5000mAh 行動電源 (顏色: Cobalt Rhombus) (已包運費 - 離島區除外)",
+      "mode": "strict",
+      "expected_product_name": "(香港) Knit Warm - 「溫享座墊」 + 5000mAh 行動電源 (顏色: Cobalt Rhombus) (已包運費 - 離島區除外)",
+      "expected_category_name": "減壓坐墊",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_018",
+      "query": "(香港) KOLB LIFE Limited / 網煮有限公司 - 咸魚白豆蓉 (未包運費)",
+      "mode": "strict",
+      "expected_product_name": "(香港) KOLB LIFE Limited / 網煮有限公司 - 咸魚白豆蓉 (未包運費)",
+      "expected_category_name": "照護食品",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_019",
+      "query": "(香港) KOLB LIFE Limited / 網煮有限公司 - 椰香紫薯豆奶露 (未包運費)",
+      "mode": "strict",
+      "expected_product_name": "(香港) KOLB LIFE Limited / 網煮有限公司 - 椰香紫薯豆奶露 (未包運費)",
+      "expected_category_name": "照護食品",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_020",
+      "query": "文化村生活及復康產品有限公司 - 銀適 拐杖椅",
+      "mode": "strict",
+      "expected_product_name": "文化村生活及復康產品有限公司 - 銀適 拐杖椅",
+      "expected_category_name": "特別用途座椅",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_021",
+      "query": "枴杖椅",
+      "mode": "strict",
+      "expected_product_name": "枴杖椅",
+      "expected_category_name": "特別用途座椅",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_022",
+      "query": "(內地) 傳承醫療有限公司 - 理療電熱墊 (未包運費)",
+      "mode": "strict",
+      "expected_product_name": "(內地) 傳承醫療有限公司 - 理療電熱墊 (未包運費)",
+      "expected_category_name": "痛症舒緩",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_023",
+      "query": "(內地) 傳承醫療有限公司 - 理療電熱肩頸墊 (未包運費)",
+      "mode": "strict",
+      "expected_product_name": "(內地) 傳承醫療有限公司 - 理療電熱肩頸墊 (未包運費)",
+      "expected_category_name": "痛症舒緩",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_024",
+      "query": "吊衣(折疊式移位機) - MS-S",
+      "mode": "strict",
+      "expected_product_name": "吊衣(折疊式移位機) - MS-S",
+      "expected_category_name": "移位機及配件",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_025",
+      "query": "吊衣(折疊式移位機) - EE - M",
+      "mode": "strict",
+      "expected_product_name": "吊衣(折疊式移位機) - EE - M",
+      "expected_category_name": "移位機及配件",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_026",
+      "query": "(內地) Shun Hing Technology Co., Ltd. - 智能助行機械人 ZW568 (未包運費)",
+      "mode": "strict",
+      "expected_product_name": "(內地) Shun Hing Technology Co., Ltd. - 智能助行機械人 ZW568 (未包運費)",
+      "expected_category_name": "行動輔助器材",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_027",
+      "query": "(內地) 港灣智通有限公司 - 行走助力機器人 - π (未包運費)",
+      "mode": "strict",
+      "expected_product_name": "(內地) 港灣智通有限公司 - 行走助力機器人 - π (未包運費)",
+      "expected_category_name": "行動輔助器材",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_028",
+      "query": "床靠背",
+      "mode": "strict",
+      "expected_product_name": "床靠背",
+      "expected_category_name": "護理床及配件",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_029",
+      "query": "E1-002_醫療護理超低床 - MFB",
+      "mode": "strict",
+      "expected_product_name": "E1-002_醫療護理超低床 - MFB",
+      "expected_category_name": "護理床及配件",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_030",
+      "query": "(內地) 上海繪神醫療科技有限公司 - DreamPods安睡儀 (未包運費)",
+      "mode": "strict",
+      "expected_product_name": "(內地) 上海繪神醫療科技有限公司 - DreamPods安睡儀 (未包運費)",
+      "expected_category_name": "通訊輔助工具",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_031",
+      "query": "(內地) 傳承醫療有限公司 - 無線隨身SOS長者呼叫器呼叫套裝 (未包運費)",
+      "mode": "strict",
+      "expected_product_name": "(內地) 傳承醫療有限公司 - 無線隨身SOS長者呼叫器呼叫套裝 (未包運費)",
+      "expected_category_name": "通訊輔助工具",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_032",
+      "query": "(內地) SCAN INFINITY LTD. - 智能家居運動系統 (未包運費)",
+      "mode": "strict",
+      "expected_product_name": "(內地) SCAN INFINITY LTD. - 智能家居運動系統 (未包運費)",
+      "expected_category_name": "運動產品",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_033",
+      "query": "(香港) Motive Force - 居家動樂 Alpha + Beta (已包運費 - 離島區除外)",
+      "mode": "strict",
+      "expected_product_name": "(香港) Motive Force - 居家動樂 Alpha + Beta (已包運費 - 離島區除外)",
+      "expected_category_name": "運動產品",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_034",
+      "query": "(內地) 世衛實業有限公司 - 小彬AI情感陪伴機器人 (未包運費)",
+      "mode": "strict",
+      "expected_product_name": "(內地) 世衛實業有限公司 - 小彬AI情感陪伴機器人 (未包運費)",
+      "expected_category_name": "陪伴機械人",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_035",
+      "query": "(內地) 數字華夏（深圳）科技有限公司 - 四足機器人 - 衛小鹿機器狗",
+      "mode": "strict",
+      "expected_product_name": "(內地) 數字華夏（深圳）科技有限公司 - 四足機器人 - 衛小鹿機器狗",
+      "expected_category_name": "陪伴機械人",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_036",
+      "query": "HOHOLIFE好好生活 - Gyenno Bravo Twist 睿餐智能防抖匙 (已包運費)",
+      "mode": "strict",
+      "expected_product_name": "HOHOLIFE好好生活 - Gyenno Bravo Twist 睿餐智能防抖匙 (已包運費)",
+      "expected_category_name": "食用品",
+      "expected_hit_at_1": true
+    },
+    {
+      "case_id": "is_exact_037",
+      "query": "室內用餐車",
+      "mode": "strict",
+      "expected_product_name": "室內用餐車",
+      "expected_category_name": "食用品",
+      "expected_hit_at_1": true
+    }
+  ],
+  "semantic_cases": [
+    {
+      "case_id": "is_semantic_001",
+      "query": "我想找其他相關產品",
+      "mode": "semantic_rerank",
+      "expected_product_name": "中心職業治療評估及諮詢服務",
+      "expected_category_name": "其他",
+      "expected_relevant_products": [
+        "中心職業治療評估及諮詢服務"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_002",
+      "query": "我想找其他相關產品",
+      "mode": "semantic_rerank",
+      "expected_product_name": "上門家居評估",
+      "expected_category_name": "其他",
+      "expected_relevant_products": [
+        "上門家居評估"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_003",
+      "query": "我想找一款復康設備，主要需求是：AI復康機械手 OYFM7000 是一款革命性的智能復康裝置，專為腦損傷或中風患者設計，輔",
+      "mode": "semantic_rerank",
+      "expected_product_name": "(內地) Fairy Enterprise limited - AI復康機械手 (未包運費)",
+      "expected_category_name": "復康設備",
+      "expected_relevant_products": [
+        "(內地) Fairy Enterprise limited - AI復康機械手 (未包運費)"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_004",
+      "query": "我想找一款復康設備，主要需求是：智能髖關節外骨骼 SEEPPO 是一款高效的可穿戴式外骨骼機器人系統，旨在為下肢運動功能障",
+      "mode": "semantic_rerank",
+      "expected_product_name": "(內地) Fairy Enterprise limited - 智能髖關節外骨骼 (未包運費)",
+      "expected_category_name": "復康設備",
+      "expected_relevant_products": [
+        "(內地) Fairy Enterprise limited - 智能髖關節外骨骼 (未包運費)"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_005",
+      "query": "我想找一款扶手，主要需求是：- 方便上落床，並減低夜間跌倒風險 - 配有一條安全綁帶，可扣緊床架並使護欄安全地靠在床墊",
+      "mode": "semantic_rerank",
+      "expected_product_name": "床邊扶手",
+      "expected_category_name": "扶手",
+      "expected_relevant_products": [
+        "床邊扶手"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_006",
+      "query": "我想找一款扶手，主要需求是：地毯；摺椅",
+      "mode": "semantic_rerank",
+      "expected_product_name": "J1-001_多用途扶手 - PN",
+      "expected_category_name": "扶手",
+      "expected_relevant_products": [
+        "J1-001_多用途扶手 - PN"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_007",
+      "query": "我想找一款智能健康監測，主要需求是：DynasynQ 智能手錶 是一款結合 AI 雲端 應用程式的智能健康監測系統",
+      "mode": "semantic_rerank",
+      "expected_product_name": "(內地) Shun Hing Technology Co., Ltd. - DynasynQ 無創葡萄糖監測手錶 (未包運費)",
+      "expected_category_name": "智能健康監測",
+      "expected_relevant_products": [
+        "(內地) Shun Hing Technology Co., Ltd. - DynasynQ 無創葡萄糖監測手錶 (未包運費)"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_008",
+      "query": "我想找一款智能健康監測，主要需求是：鑒忘Qankorey 是 全球首創 的阿爾茨海默症尿液快篩試劑盒，透過檢測尿液中阿爾茨海默",
+      "mode": "semantic_rerank",
+      "expected_product_name": "(內地) Smart Idea Health Technology Limited - 阿爾茨海默症尿液快篩試劑盒 (鑒忘Qankorey) (未包運費)",
+      "expected_category_name": "智能健康監測",
+      "expected_relevant_products": [
+        "(內地) Smart Idea Health Technology Limited - 阿爾茨海默症尿液快篩試劑盒 (鑒忘Qankorey) (未包運費)"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_009",
+      "query": "我想找一款智能手錶，主要需求是：\"本產品現時只限展示階段並尚未於香港正式推出，如你對本產品有興趣，歡迎透過Whatsapp",
+      "mode": "semantic_rerank",
+      "expected_product_name": "(內地) 上海繪神醫療科技有限公司 - Stable手環 (未包運費)",
+      "expected_category_name": "智能手錶",
+      "expected_relevant_products": [
+        "(內地) 上海繪神醫療科技有限公司 - Stable手環 (未包運費)"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_010",
+      "query": "我想找一款智能手錶，主要需求是：SMARTLOVE 智會愛智能手錶是一款專為長者與健康關注用戶而設的智慧穿戴設備，結合即時",
+      "mode": "semantic_rerank",
+      "expected_product_name": "智能手錶",
+      "expected_category_name": "智能手錶",
+      "expected_relevant_products": [
+        "智能手錶"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_011",
+      "query": "我想找一款智能眼鏡，主要需求是：本產品現時只限展示階段並尚未於香港正式推出，如你對本產品有興趣，歡迎透過Whatsapp",
+      "mode": "semantic_rerank",
+      "expected_product_name": "(內地) 上海笪光科技有限公司 - 笪光導盲眼鏡 (未包運費)",
+      "expected_category_name": "智能眼鏡",
+      "expected_relevant_products": [
+        "(內地) 上海笪光科技有限公司 - 笪光導盲眼鏡 (未包運費)"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_012",
+      "query": "我想找一款樂齡輔助用品，主要需求是：Green Breeze - Air Purifier 醫療級別空氣淨化機 是一款專注於病",
+      "mode": "semantic_rerank",
+      "expected_product_name": "(內地) Medical Technologies Limited - Green Breeze - Air Purifier 醫療級別空氣淨化機 (已包運費)",
+      "expected_category_name": "樂齡輔助用品",
+      "expected_relevant_products": [
+        "(內地) Medical Technologies Limited - Green Breeze - Air Purifier 醫療級別空氣淨化機 (已包運費)"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_013",
+      "query": "我想找一款樂齡輔助用品，主要需求是：本產品現時只限展示階段並尚未於香港正式推出，如你對本產品有興趣，歡迎透過Whatsapp",
+      "mode": "semantic_rerank",
+      "expected_product_name": "(內地) 上海三思電子工程有限公司 - 紅外線小夜燈 (未包運費)",
+      "expected_category_name": "樂齡輔助用品",
+      "expected_relevant_products": [
+        "(內地) 上海三思電子工程有限公司 - 紅外線小夜燈 (未包運費)"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_014",
+      "query": "我想找一款沐浴及如廁輔助用品，主要需求是：NASK 納米纖維成人尿片 透過領先的納米技術，將傳統尿片的防護功能提升至醫療級細菌防護水",
+      "mode": "semantic_rerank",
+      "expected_product_name": "(香港) NASK Technology Company Limited - NASK 納米纖維成人尿片 (未包運費)",
+      "expected_category_name": "沐浴及如廁輔助用品",
+      "expected_relevant_products": [
+        "(香港) NASK Technology Company Limited - NASK 納米纖維成人尿片 (未包運費)"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_015",
+      "query": "我想找一款沐浴及如廁輔助用品，主要需求是：需要一個沖涼椅(因為空間有限, 坐墊長度需要少於40cm，否則不能進入浴室, 如果沖涼椅可",
+      "mode": "semantic_rerank",
+      "expected_product_name": "[徵求 - 物資] 沖涼椅",
+      "expected_category_name": "沐浴及如廁輔助用品",
+      "expected_relevant_products": [
+        "[徵求 - 物資] 沖涼椅"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_016",
+      "query": "我想找一款減壓坐墊，主要需求是：溫享座墊 是一款不僅是坐墊，更是個人化舒適區域的創意智慧產品，旨在為使用者提供即時暖意",
+      "mode": "semantic_rerank",
+      "expected_product_name": "(香港) Knitwarm Limited「溫享座墊」 + 5000mAh 行動電源 (顏色: City Twilight) - (已包運費 - 離島區除外)",
+      "expected_category_name": "減壓坐墊",
+      "expected_relevant_products": [
+        "(香港) Knitwarm Limited「溫享座墊」 + 5000mAh 行動電源 (顏色: City Twilight) - (已包運費 - 離島區除外)"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_017",
+      "query": "我想找一款減壓坐墊，主要需求是：溫享座墊 是一款不僅是坐墊，更是個人化舒適區域的創意智慧產品，旨在為使用者提供即時暖意",
+      "mode": "semantic_rerank",
+      "expected_product_name": "(香港) Knit Warm - 「溫享座墊」 + 5000mAh 行動電源 (顏色: Cobalt Rhombus) (已包運費 - 離島區除外)",
+      "expected_category_name": "減壓坐墊",
+      "expected_relevant_products": [
+        "(香港) Knit Warm - 「溫享座墊」 + 5000mAh 行動電源 (顏色: Cobalt Rhombus) (已包運費 - 離島區除外)"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_018",
+      "query": "我想找一款照護食品，主要需求是：咸魚白豆蓉 是一款旨在解決傳統鹹魚多骨且含鹽量高問題的創新食品，特別針對長者的飲食喜好與安",
+      "mode": "semantic_rerank",
+      "expected_product_name": "(香港) KOLB LIFE Limited / 網煮有限公司 - 咸魚白豆蓉 (未包運費)",
+      "expected_category_name": "照護食品",
+      "expected_relevant_products": [
+        "(香港) KOLB LIFE Limited / 網煮有限公司 - 咸魚白豆蓉 (未包運費)"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_019",
+      "query": "我想找一款照護食品，主要需求是：椰香紫薯豆奶露 是一款本公司首度推出的照護食甜品，旨在滿足吞嚥困難人士對於傳統糖水與甜點的",
+      "mode": "semantic_rerank",
+      "expected_product_name": "(香港) KOLB LIFE Limited / 網煮有限公司 - 椰香紫薯豆奶露 (未包運費)",
+      "expected_category_name": "照護食品",
+      "expected_relevant_products": [
+        "(香港) KOLB LIFE Limited / 網煮有限公司 - 椰香紫薯豆奶露 (未包運費)"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_020",
+      "query": "我想找一款特別用途座椅，主要需求是：產品功能 打開時提供舒適座椅 摺合時可作輔助手杖使用 高度可調節 ; 5段高度選擇 產品特",
+      "mode": "semantic_rerank",
+      "expected_product_name": "文化村生活及復康產品有限公司 - 銀適 拐杖椅",
+      "expected_category_name": "特別用途座椅",
+      "expected_relevant_products": [
+        "文化村生活及復康產品有限公司 - 銀適 拐杖椅"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_021",
+      "query": "我想找一款特別用途座椅，主要需求是：- 輔助手杖，打開可變為舒適座椅 - 採用三腳著地，配橡膠防滑腳墊，著地性能好，穩定性佳，",
+      "mode": "semantic_rerank",
+      "expected_product_name": "枴杖椅",
+      "expected_category_name": "特別用途座椅",
+      "expected_relevant_products": [
+        "枴杖椅"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_022",
+      "query": "我想找一款痛症舒緩，主要需求是：理療電熱墊 是一種用於舒緩痛症的電熱產品",
+      "mode": "semantic_rerank",
+      "expected_product_name": "(內地) 傳承醫療有限公司 - 理療電熱墊 (未包運費)",
+      "expected_category_name": "痛症舒緩",
+      "expected_relevant_products": [
+        "(內地) 傳承醫療有限公司 - 理療電熱墊 (未包運費)"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_023",
+      "query": "我想找一款痛症舒緩，主要需求是：理療電熱肩頸墊 是一款專為舒緩痛症和疲勞不適而設計的熱療產品",
+      "mode": "semantic_rerank",
+      "expected_product_name": "(內地) 傳承醫療有限公司 - 理療電熱肩頸墊 (未包運費)",
+      "expected_category_name": "痛症舒緩",
+      "expected_relevant_products": [
+        "(內地) 傳承醫療有限公司 - 理療電熱肩頸墊 (未包運費)"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_024",
+      "query": "我想找移位機及配件相關產品",
+      "mode": "semantic_rerank",
+      "expected_product_name": "吊衣(折疊式移位機) - MS-S",
+      "expected_category_name": "移位機及配件",
+      "expected_relevant_products": [
+        "吊衣(折疊式移位機) - MS-S"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_025",
+      "query": "我想找移位機及配件相關產品",
+      "mode": "semantic_rerank",
+      "expected_product_name": "吊衣(折疊式移位機) - EE - M",
+      "expected_category_name": "移位機及配件",
+      "expected_relevant_products": [
+        "吊衣(折疊式移位機) - EE - M"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_026",
+      "query": "我想找一款行動輔助器材，主要需求是：智能助行機器人 ZW568 旨在將科技溫度融入康復過程，實現「智行自在，康復新生」",
+      "mode": "semantic_rerank",
+      "expected_product_name": "(內地) Shun Hing Technology Co., Ltd. - 智能助行機械人 ZW568 (未包運費)",
+      "expected_category_name": "行動輔助器材",
+      "expected_relevant_products": [
+        "(內地) Shun Hing Technology Co., Ltd. - 智能助行機械人 ZW568 (未包運費)"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_027",
+      "query": "我想找一款行動輔助器材，主要需求是：行走助力機器人π 是一款結合人體工學與 AI 算法的穿戴式外骨骼設備，旨在為戶外運動及日常",
+      "mode": "semantic_rerank",
+      "expected_product_name": "(內地) 港灣智通有限公司 - 行走助力機器人 - π (未包運費)",
+      "expected_category_name": "行動輔助器材",
+      "expected_relevant_products": [
+        "(內地) 港灣智通有限公司 - 行走助力機器人 - π (未包運費)"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_028",
+      "query": "我想找一款護理床及配件，主要需求是：- 五段靠背角度調整設計，便於靠、躺、坐、臥時身體的支撐",
+      "mode": "semantic_rerank",
+      "expected_product_name": "床靠背",
+      "expected_category_name": "護理床及配件",
+      "expected_relevant_products": [
+        "床靠背"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_029",
+      "query": "我想找護理床及配件相關產品",
+      "mode": "semantic_rerank",
+      "expected_product_name": "E1-002_醫療護理超低床 - MFB",
+      "expected_category_name": "護理床及配件",
+      "expected_relevant_products": [
+        "E1-002_醫療護理超低床 - MFB"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_030",
+      "query": "我想找一款通訊輔助工具，主要需求是：本產品現時只限展示階段並尚未於香港正式推出，如你對本產品有興趣，歡迎透過Whatsapp",
+      "mode": "semantic_rerank",
+      "expected_product_name": "(內地) 上海繪神醫療科技有限公司 - DreamPods安睡儀 (未包運費)",
+      "expected_category_name": "通訊輔助工具",
+      "expected_relevant_products": [
+        "(內地) 上海繪神醫療科技有限公司 - DreamPods安睡儀 (未包運費)"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_031",
+      "query": "我想找一款通訊輔助工具，主要需求是：SOS 無線呼叫器 是一款專為長者設計、將照顧和安全融入小巧設備的產品，旨在確保長者在家中",
+      "mode": "semantic_rerank",
+      "expected_product_name": "(內地) 傳承醫療有限公司 - 無線隨身SOS長者呼叫器呼叫套裝 (未包運費)",
+      "expected_category_name": "通訊輔助工具",
+      "expected_relevant_products": [
+        "(內地) 傳承醫療有限公司 - 無線隨身SOS長者呼叫器呼叫套裝 (未包運費)"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_032",
+      "query": "我想找一款運動產品，主要需求是：智能家居運動系統 是您的個人健康和健身中心，旨在將家中的任何角落轉變為動態的鍛鍊空間",
+      "mode": "semantic_rerank",
+      "expected_product_name": "(內地) SCAN INFINITY LTD. - 智能家居運動系統 (未包運費)",
+      "expected_category_name": "運動產品",
+      "expected_relevant_products": [
+        "(內地) SCAN INFINITY LTD. - 智能家居運動系統 (未包運費)"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_033",
+      "query": "我想找一款運動產品，主要需求是：「居家動樂」系列 由專業治療師設計內容，結合數碼化教材與專利追蹤技術，旨在提升長者訓練動機",
+      "mode": "semantic_rerank",
+      "expected_product_name": "(香港) Motive Force - 居家動樂 Alpha + Beta (已包運費 - 離島區除外)",
+      "expected_category_name": "運動產品",
+      "expected_relevant_products": [
+        "(香港) Motive Force - 居家動樂 Alpha + Beta (已包運費 - 離島區除外)"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_034",
+      "query": "我想找一款陪伴機械人，主要需求是：小彬AI情感陪伴機器人 是一款以 情感陪伴為核心 的智慧型機器人",
+      "mode": "semantic_rerank",
+      "expected_product_name": "(內地) 世衛實業有限公司 - 小彬AI情感陪伴機器人 (未包運費)",
+      "expected_category_name": "陪伴機械人",
+      "expected_relevant_products": [
+        "(內地) 世衛實業有限公司 - 小彬AI情感陪伴機器人 (未包運費)"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_035",
+      "query": "我想找一款陪伴機械人，主要需求是：衛小鹿 是一款通用型 智慧仿生四足機器人 ，旨在提供卓越的運動性能與高度的開發靈活性",
+      "mode": "semantic_rerank",
+      "expected_product_name": "(內地) 數字華夏（深圳）科技有限公司 - 四足機器人 - 衛小鹿機器狗",
+      "expected_category_name": "陪伴機械人",
+      "expected_relevant_products": [
+        "(內地) 數字華夏（深圳）科技有限公司 - 四足機器人 - 衛小鹿機器狗"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_036",
+      "query": "我想找一款食用品，主要需求是：Gyenno Bravo Twist 睿餐智能防抖匙 Gyenno Bravo Twist",
+      "mode": "semantic_rerank",
+      "expected_product_name": "HOHOLIFE好好生活 - Gyenno Bravo Twist 睿餐智能防抖匙 (已包運費)",
+      "expected_category_name": "食用品",
+      "expected_relevant_products": [
+        "HOHOLIFE好好生活 - Gyenno Bravo Twist 睿餐智能防抖匙 (已包運費)"
+      ],
+      "top_k": 5
+    },
+    {
+      "case_id": "is_semantic_037",
+      "query": "我想找一款食用品，主要需求是：- 可協助下肢力量不足的使用者於家中更安全地移動 - 可拆卸托盤用於放置食物 - 寬闊手把",
+      "mode": "semantic_rerank",
+      "expected_product_name": "室內用餐車",
+      "expected_category_name": "食用品",
+      "expected_relevant_products": [
+        "室內用餐車"
+      ],
+      "top_k": 5
+    }
+  ],
+  "llm_rerank_cases": [
+    {
+      "case_id": "is_llm_rerank_001",
+      "query": "我想找其他相關產品",
+      "mode": "semantic_rerank",
+      "top_k": 5,
+      "expected_product_name": "中心職業治療評估及諮詢服務",
+      "expected_category_name": "其他",
+      "expected_relevant_products": [
+        "中心職業治療評估及諮詢服務"
+      ],
+      "expected_behavior": "llm_rerank_should_promote_target_to_top_1"
+    },
+    {
+      "case_id": "is_llm_rerank_002",
+      "query": "我想找其他相關產品",
+      "mode": "semantic_rerank",
+      "top_k": 5,
+      "expected_product_name": "上門家居評估",
+      "expected_category_name": "其他",
+      "expected_relevant_products": [
+        "上門家居評估"
+      ],
+      "expected_behavior": "llm_rerank_should_promote_target_to_top_1"
+    },
+    {
+      "case_id": "is_llm_rerank_003",
+      "query": "我想找一款復康設備，主要需求是：AI復康機械手 OYFM7000 是一款革命性的智能復康裝置，專為腦損傷或中風患者設計，輔",
+      "mode": "semantic_rerank",
+      "top_k": 5,
+      "expected_product_name": "(內地) Fairy Enterprise limited - AI復康機械手 (未包運費)",
+      "expected_category_name": "復康設備",
+      "expected_relevant_products": [
+        "(內地) Fairy Enterprise limited - AI復康機械手 (未包運費)"
+      ],
+      "expected_behavior": "llm_rerank_should_promote_target_to_top_1"
+    },
+    {
+      "case_id": "is_llm_rerank_004",
+      "query": "我想找一款復康設備，主要需求是：智能髖關節外骨骼 SEEPPO 是一款高效的可穿戴式外骨骼機器人系統，旨在為下肢運動功能障",
+      "mode": "semantic_rerank",
+      "top_k": 5,
+      "expected_product_name": "(內地) Fairy Enterprise limited - 智能髖關節外骨骼 (未包運費)",
+      "expected_category_name": "復康設備",
+      "expected_relevant_products": [
+        "(內地) Fairy Enterprise limited - 智能髖關節外骨骼 (未包運費)"
+      ],
+      "expected_behavior": "llm_rerank_should_promote_target_to_top_1"
+    },
+    {
+      "case_id": "is_llm_rerank_005",
+      "query": "我想找一款扶手，主要需求是：- 方便上落床，並減低夜間跌倒風險 - 配有一條安全綁帶，可扣緊床架並使護欄安全地靠在床墊",
+      "mode": "semantic_rerank",
+      "top_k": 5,
+      "expected_product_name": "床邊扶手",
+      "expected_category_name": "扶手",
+      "expected_relevant_products": [
+        "床邊扶手"
+      ],
+      "expected_behavior": "llm_rerank_should_promote_target_to_top_1"
+    },
+    {
+      "case_id": "is_llm_rerank_006",
+      "query": "我想找一款扶手，主要需求是：地毯；摺椅",
+      "mode": "semantic_rerank",
+      "top_k": 5,
+      "expected_product_name": "J1-001_多用途扶手 - PN",
+      "expected_category_name": "扶手",
+      "expected_relevant_products": [
+        "J1-001_多用途扶手 - PN"
+      ],
+      "expected_behavior": "llm_rerank_should_promote_target_to_top_1"
+    },
+    {
+      "case_id": "is_llm_rerank_007",
+      "query": "我想找一款智能健康監測，主要需求是：DynasynQ 智能手錶 是一款結合 AI 雲端 應用程式的智能健康監測系統",
+      "mode": "semantic_rerank",
+      "top_k": 5,
+      "expected_product_name": "(內地) Shun Hing Technology Co., Ltd. - DynasynQ 無創葡萄糖監測手錶 (未包運費)",
+      "expected_category_name": "智能健康監測",
+      "expected_relevant_products": [
+        "(內地) Shun Hing Technology Co., Ltd. - DynasynQ 無創葡萄糖監測手錶 (未包運費)"
+      ],
+      "expected_behavior": "llm_rerank_should_promote_target_to_top_1"
+    },
+    {
+      "case_id": "is_llm_rerank_008",
+      "query": "我想找一款智能健康監測，主要需求是：鑒忘Qankorey 是 全球首創 的阿爾茨海默症尿液快篩試劑盒，透過檢測尿液中阿爾茨海默",
+      "mode": "semantic_rerank",
+      "top_k": 5,
+      "expected_product_name": "(內地) Smart Idea Health Technology Limited - 阿爾茨海默症尿液快篩試劑盒 (鑒忘Qankorey) (未包運費)",
+      "expected_category_name": "智能健康監測",
+      "expected_relevant_products": [
+        "(內地) Smart Idea Health Technology Limited - 阿爾茨海默症尿液快篩試劑盒 (鑒忘Qankorey) (未包運費)"
+      ],
+      "expected_behavior": "llm_rerank_should_promote_target_to_top_1"
+    },
+    {
+      "case_id": "is_llm_rerank_009",
+      "query": "我想找一款智能手錶，主要需求是：\"本產品現時只限展示階段並尚未於香港正式推出，如你對本產品有興趣，歡迎透過Whatsapp",
+      "mode": "semantic_rerank",
+      "top_k": 5,
+      "expected_product_name": "(內地) 上海繪神醫療科技有限公司 - Stable手環 (未包運費)",
+      "expected_category_name": "智能手錶",
+      "expected_relevant_products": [
+        "(內地) 上海繪神醫療科技有限公司 - Stable手環 (未包運費)"
+      ],
+      "expected_behavior": "llm_rerank_should_promote_target_to_top_1"
+    },
+    {
+      "case_id": "is_llm_rerank_010",
+      "query": "我想找一款智能手錶，主要需求是：SMARTLOVE 智會愛智能手錶是一款專為長者與健康關注用戶而設的智慧穿戴設備，結合即時",
+      "mode": "semantic_rerank",
+      "top_k": 5,
+      "expected_product_name": "智能手錶",
+      "expected_category_name": "智能手錶",
+      "expected_relevant_products": [
+        "智能手錶"
+      ],
+      "expected_behavior": "llm_rerank_should_promote_target_to_top_1"
+    },
+    {
+      "case_id": "is_llm_rerank_011",
+      "query": "我想找一款智能眼鏡，主要需求是：本產品現時只限展示階段並尚未於香港正式推出，如你對本產品有興趣，歡迎透過Whatsapp",
+      "mode": "semantic_rerank",
+      "top_k": 5,
+      "expected_product_name": "(內地) 上海笪光科技有限公司 - 笪光導盲眼鏡 (未包運費)",
+      "expected_category_name": "智能眼鏡",
+      "expected_relevant_products": [
+        "(內地) 上海笪光科技有限公司 - 笪光導盲眼鏡 (未包運費)"
+      ],
+      "expected_behavior": "llm_rerank_should_promote_target_to_top_1"
+    },
+    {
+      "case_id": "is_llm_rerank_012",
+      "query": "我想找一款樂齡輔助用品，主要需求是：Green Breeze - Air Purifier 醫療級別空氣淨化機 是一款專注於病",
+      "mode": "semantic_rerank",
+      "top_k": 5,
+      "expected_product_name": "(內地) Medical Technologies Limited - Green Breeze - Air Purifier 醫療級別空氣淨化機 (已包運費)",
+      "expected_category_name": "樂齡輔助用品",
+      "expected_relevant_products": [
+        "(內地) Medical Technologies Limited - Green Breeze - Air Purifier 醫療級別空氣淨化機 (已包運費)"
+      ],
+      "expected_behavior": "llm_rerank_should_promote_target_to_top_1"
+    }
+  ],
+  "llm_fallback_cases": [
+    {
+      "case_id": "is_llm_fallback_invalid_json_001",
+      "query": "我想找其他相關產品",
+      "mode": "semantic_rerank",
+      "simulated_llm_output": "not-json",
+      "expected_behavior": "fallback_to_local_ranker",
+      "expected_product_name": "中心職業治療評估及諮詢服務",
+      "expected_category_name": "其他"
+    },
+    {
+      "case_id": "is_llm_fallback_empty_response_002",
+      "query": "我想找其他相關產品",
+      "mode": "semantic_rerank",
+      "simulated_llm_output": "",
+      "expected_behavior": "fallback_to_local_ranker",
+      "expected_product_name": "上門家居評估",
+      "expected_category_name": "其他"
+    },
+    {
+      "case_id": "is_llm_fallback_unknown_identifier_003",
+      "query": "我想找一款復康設備，主要需求是：AI復康機械手 OYFM7000 是一款革命性的智能復康裝置，專為腦損傷或中風患者設計，輔",
+      "mode": "semantic_rerank",
+      "simulated_llm_output": "candidate_id=999",
+      "expected_behavior": "fallback_to_local_ranker",
+      "expected_product_name": "(內地) Fairy Enterprise limited - AI復康機械手 (未包運費)",
+      "expected_category_name": "復康設備"
+    },
+    {
+      "case_id": "is_llm_fallback_free_text_only_004",
+      "query": "我想找一款復康設備，主要需求是：智能髖關節外骨骼 SEEPPO 是一款高效的可穿戴式外骨骼機器人系統，旨在為下肢運動功能障",
+      "mode": "semantic_rerank",
+      "simulated_llm_output": "我觉得第二个比较适合",
+      "expected_behavior": "fallback_to_local_ranker",
+      "expected_product_name": "(內地) Fairy Enterprise limited - 智能髖關節外骨骼 (未包運費)",
+      "expected_category_name": "復康設備"
+    },
+    {
+      "case_id": "is_llm_fallback_partial_number_005",
+      "query": "我想找一款扶手，主要需求是：- 方便上落床，並減低夜間跌倒風險 - 配有一條安全綁帶，可扣緊床架並使護欄安全地靠在床墊",
+      "mode": "semantic_rerank",
+      "simulated_llm_output": "2",
+      "expected_behavior": "fallback_to_local_ranker",
+      "expected_product_name": "床邊扶手",
+      "expected_category_name": "扶手"
+    },
+    {
+      "case_id": "is_llm_fallback_malformed_object_006",
+      "query": "我想找一款扶手，主要需求是：地毯；摺椅",
+      "mode": "semantic_rerank",
+      "simulated_llm_output": "{\"best\":\"A-01\"",
+      "expected_behavior": "fallback_to_local_ranker",
+      "expected_product_name": "J1-001_多用途扶手 - PN",
+      "expected_category_name": "扶手"
+    }
+  ]
+}

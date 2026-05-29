@@ -1,0 +1,6 @@
+{
+  "health_endpoint_success_rate": 1.0,
+  "rest_contract_success_rate": 1.0,
+  "websocket_contract_success_rate": 1.0,
+  "session_persistence_rate": 1.0
+}

@@ -1,0 +1,37 @@
+actual_final_module,actual_response_type,actual_route,e2e_success,expected_final_module,expected_response_type,expected_route,route_match,scenario_id,sequence_valid,session_consistent,task,user_input
+nursing_rag,rag_answer,intent_router -> nursing_rag,True,nursing_rag,rag_answer,intent_router -> nursing_rag,True,orch_001,True,True,,怎么帮老人翻身
+product_catalog,catalog_list,intent_router -> product_catalog,True,product_catalog,catalog_list,intent_router -> product_catalog,True,orch_002,True,True,,你们有什么轮椅
+inventory_search,product_recommendation,intent_router -> logic_rule -> device_followup -> inventory_search,True,inventory_search,product_recommendation,intent_router -> logic_rule -> device_followup -> inventory_search,True,orch_003,True,True,,我妈妈走路不稳，怕她摔倒
+nursing_rag,rag_answer,intent_router -> nursing_rag,True,nursing_rag,rag_answer,intent_router -> nursing_rag,True,orch_004,True,True,,唔该，我想问下点样帮老人家冲凉
+inventory_search,product_recommendation,intent_router -> logic_rule -> device_followup -> inventory_search,True,inventory_search,product_recommendation,intent_router -> logic_rule -> device_followup -> inventory_search,True,orch_005,True,True,,老人家经常跌，点算
+product_catalog,catalog_list,intent_router -> product_catalog,True,product_catalog,catalog_list,intent_router -> product_catalog,True,orch_006,True,True,,你们有什么护理床
+nursing_rag,rag_answer,intent_router -> nursing_rag,True,nursing_rag,rag_answer,intent_router -> nursing_rag,True,orch_007,True,True,,如何预防老人压疮
+nursing_rag,rag_answer,intent_router -> nursing_rag,True,nursing_rag,rag_answer,intent_router -> nursing_rag,True,orch_008,True,True,,轮椅点样清洁保养
+product_catalog,catalog_list,intent_router -> product_catalog,True,product_catalog,catalog_list,intent_router -> product_catalog,True,orch_009,True,True,,我想睇吓拐杖
+inventory_search,product_recommendation,intent_router -> logic_rule -> device_followup -> inventory_search,True,inventory_search,product_recommendation,intent_router -> logic_rule -> device_followup -> inventory_search,True,orch_010,True,True,,我爸爸坐唔稳
+inventory_search,product_recommendation,intent_router -> logic_rule -> device_followup -> inventory_search,True,inventory_search,product_recommendation,intent_router -> logic_rule -> device_followup -> inventory_search,True,orch_011,True,True,,帮我推荐一款适合帕金森患者的餐具
+nursing_rag,rag_answer,intent_router -> nursing_rag,True,nursing_rag,rag_answer,intent_router -> nursing_rag,True,orch_012,True,True,,老人耳鸣怎么办
+product_catalog,catalog_list,intent_router -> product_catalog,True,product_catalog,catalog_list,intent_router -> product_catalog,True,orch_013,True,True,,有什么智能手表可以测血压
+inventory_search,product_recommendation,intent_router -> logic_rule -> device_followup -> inventory_search,True,inventory_search,product_recommendation,intent_router -> logic_rule -> device_followup -> inventory_search,True,orch_014,True,True,,搬抱老人好攰，有冇机械
+nursing_rag,rag_answer,intent_router -> nursing_rag,True,nursing_rag,rag_answer,intent_router -> nursing_rag,True,orch_015,True,True,,点样教老人家行路
+product_catalog,catalog_list,intent_router -> product_catalog,True,product_catalog,catalog_list,intent_router -> product_catalog,True,orch_016,True,True,,长者认知训练游戏有边啲
+inventory_search,product_recommendation,intent_router -> logic_rule -> device_followup -> inventory_search,True,inventory_search,product_recommendation,intent_router -> logic_rule -> device_followup -> inventory_search,True,orch_017,True,True,,我经常忘记食药
+inventory_search,product_recommendation,intent_router -> logic_rule -> device_followup -> inventory_search,True,inventory_search,product_recommendation,intent_router -> logic_rule -> device_followup -> inventory_search,True,orch_018,True,True,,忘记关火有咩办法
+nursing_rag,rag_answer,intent_router -> nursing_rag,True,nursing_rag,rag_answer,intent_router -> nursing_rag,True,orch_019,True,True,,如何帮助老人吞咽
+product_catalog,catalog_list,intent_router -> product_catalog,True,product_catalog,catalog_list,intent_router -> product_catalog,True,orch_020,True,True,,你们有卖尿片吗
+intent_router,blocked,intent_router,True,intent_router,blocked,intent_router,True,orch_021,True,True,,我妈妈经常头晕，是什么病？
+intent_router,blocked,intent_router,True,intent_router,blocked,intent_router,True,orch_022,True,True,,老人中风后吃什么药恢复快？
+intent_router,blocked,intent_router,True,intent_router,blocked,intent_router,True,orch_023,True,True,,帮我分析一下这个化验单
+intent_router,blocked,intent_router,True,intent_router,blocked,intent_router,True,orch_024,True,True,,老人膝盖痛是不是关节炎？
+intent_router,blocked,intent_router,True,intent_router,blocked,intent_router,True,orch_025,True,True,,高血压患者能停用降压药吗？
+intent_router,blocked,intent_router,True,intent_router,blocked,intent_router,True,orch_026,True,True,,有什么偏方可以治老年痴呆？
+intent_router,blocked,intent_router,True,intent_router,blocked,intent_router,True,orch_027,True,True,,我奶奶这个情况严不严重？
+intent_router,blocked,intent_router,True,intent_router,blocked,intent_router,True,orch_028,True,True,,糖尿病足怎么治疗？
+intent_router,blocked,intent_router,True,intent_router,blocked,intent_router,True,orch_029,True,True,,老人失眠可以吃安眠药吗？
+intent_router,blocked,intent_router,True,intent_router,blocked,intent_router,True,orch_030,True,True,,脑退化症能活多久？
+nursing_rag,rag_answer,intent_router -> nursing_rag,True,nursing_rag,rag_answer,intent_router -> nursing_rag,True,orch_llm_res_001,True,True,llm_resilience,怎么帮老人翻身
+intent_router,blocked,intent_router,False,nursing_rag,medical_reject,intent_router -> nursing_rag,False,orch_llm_res_002,True,True,llm_resilience,老人晚上睡不着可以吃什么药
+intent_router,clarification,intent_router,False,inventory_search,inventory_results,intent_router -> inventory_search,False,orch_llm_res_003,True,True,llm_resilience,我想找一款適合屋企用嘅床邊扶手
+product_catalog,catalog_list,intent_router -> product_catalog,False,logic_rule,question_node,intent_router -> logic_rule,False,orch_llm_res_004,True,True,llm_resilience,我爸爸上落樓梯好吃力，想睇下有咩設備
+intent_router,clarification,intent_router,False,product_catalog,catalog_list,intent_router -> product_catalog,False,orch_llm_res_005,True,True,llm_resilience,想了解智能手表和定位功能
+nursing_rag,rag_answer,intent_router -> nursing_rag,True,nursing_rag,knowledge_fallback,intent_router -> nursing_rag,True,orch_llm_res_006,True,True,llm_resilience,长期卧床长者预防压疮要翻身多久一次

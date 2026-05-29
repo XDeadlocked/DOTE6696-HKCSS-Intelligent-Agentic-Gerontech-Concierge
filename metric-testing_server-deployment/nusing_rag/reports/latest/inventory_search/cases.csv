@@ -1,0 +1,93 @@
+baseline_top_1,case_id,expected,expects_local_fallback,passed,predicted,rank,task
+,is_exact_001,中心職業治療評估及諮詢服務,,True,中心職業治療評估及諮詢服務,1,strict
+,is_exact_002,上門家居評估,,True,上門家居評估,1,strict
+,is_exact_003,(內地) Fairy Enterprise limited - AI復康機械手 (未包運費),,True,(內地) Fairy Enterprise limited - AI復康機械手 (未包運費),1,strict
+,is_exact_004,(內地) Fairy Enterprise limited - 智能髖關節外骨骼 (未包運費),,True,(內地) Fairy Enterprise limited - 智能髖關節外骨骼 (未包運費),1,strict
+,is_exact_005,床邊扶手,,True,床邊扶手,1,strict
+,is_exact_006,J1-001_多用途扶手 - PN,,True,J1-001_多用途扶手 - PN,1,strict
+,is_exact_007,"(內地) Shun Hing Technology Co., Ltd. - DynasynQ 無創葡萄糖監測手錶 (未包運費)",,True,"(內地) Shun Hing Technology Co., Ltd. - DynasynQ 無創葡萄糖監測手錶 (未包運費)",1,strict
+,is_exact_008,(內地) Smart Idea Health Technology Limited - 阿爾茨海默症尿液快篩試劑盒 (鑒忘Qankorey) (未包運費),,True,(內地) Smart Idea Health Technology Limited - 阿爾茨海默症尿液快篩試劑盒 (鑒忘Qankorey) (未包運費),1,strict
+,is_exact_009,(內地) 上海繪神醫療科技有限公司 - Stable手環 (未包運費),,True,(內地) 上海繪神醫療科技有限公司 - Stable手環 (未包運費),1,strict
+,is_exact_010,智能手錶,,True,智能手錶,1,strict
+,is_exact_011,(內地) 上海笪光科技有限公司 - 笪光導盲眼鏡 (未包運費),,True,(內地) 上海笪光科技有限公司 - 笪光導盲眼鏡 (未包運費),1,strict
+,is_exact_012,(內地) Medical Technologies Limited - Green Breeze - Air Purifier 醫療級別空氣淨化機 (已包運費),,True,(內地) Medical Technologies Limited - Green Breeze - Air Purifier 醫療級別空氣淨化機 (已包運費),1,strict
+,is_exact_013,(內地) 上海三思電子工程有限公司 - 紅外線小夜燈 (未包運費),,True,(內地) 上海三思電子工程有限公司 - 紅外線小夜燈 (未包運費),1,strict
+,is_exact_014,(香港) NASK Technology Company Limited - NASK 納米纖維成人尿片 (未包運費),,True,(香港) NASK Technology Company Limited - NASK 納米纖維成人尿片 (未包運費),1,strict
+,is_exact_015,[徵求 - 物資] 沖涼椅,,True,[徵求 - 物資] 沖涼椅,1,strict
+,is_exact_016,(香港) Knitwarm Limited「溫享座墊」 + 5000mAh 行動電源 (顏色: City Twilight) - (已包運費 - 離島區除外),,True,(香港) Knitwarm Limited「溫享座墊」 + 5000mAh 行動電源 (顏色: City Twilight) - (已包運費 - 離島區除外),1,strict
+,is_exact_017,(香港) Knit Warm - 「溫享座墊」 + 5000mAh 行動電源 (顏色: Cobalt Rhombus) (已包運費 - 離島區除外),,True,(香港) Knit Warm - 「溫享座墊」 + 5000mAh 行動電源 (顏色: Cobalt Rhombus) (已包運費 - 離島區除外),1,strict
+,is_exact_018,(香港) KOLB LIFE Limited / 網煮有限公司 - 咸魚白豆蓉 (未包運費),,True,(香港) KOLB LIFE Limited / 網煮有限公司 - 咸魚白豆蓉 (未包運費),1,strict
+,is_exact_019,(香港) KOLB LIFE Limited / 網煮有限公司 - 椰香紫薯豆奶露 (未包運費),,True,(香港) KOLB LIFE Limited / 網煮有限公司 - 椰香紫薯豆奶露 (未包運費),1,strict
+,is_exact_020,文化村生活及復康產品有限公司 - 銀適 拐杖椅,,True,文化村生活及復康產品有限公司 - 銀適 拐杖椅,1,strict
+,is_exact_021,枴杖椅,,True,枴杖椅,1,strict
+,is_exact_022,(內地) 傳承醫療有限公司 - 理療電熱墊 (未包運費),,True,(內地) 傳承醫療有限公司 - 理療電熱墊 (未包運費),1,strict
+,is_exact_023,(內地) 傳承醫療有限公司 - 理療電熱肩頸墊 (未包運費),,True,(內地) 傳承醫療有限公司 - 理療電熱肩頸墊 (未包運費),1,strict
+,is_exact_024,吊衣(折疊式移位機) - MS-S,,True,吊衣(折疊式移位機) - MS-S,1,strict
+,is_exact_025,吊衣(折疊式移位機) - EE - M,,True,吊衣(折疊式移位機) - EE - M,1,strict
+,is_exact_026,"(內地) Shun Hing Technology Co., Ltd. - 智能助行機械人 ZW568 (未包運費)",,True,"(內地) Shun Hing Technology Co., Ltd. - 智能助行機械人 ZW568 (未包運費)",1,strict
+,is_exact_027,(內地) 港灣智通有限公司 - 行走助力機器人 - π (未包運費),,True,(內地) 港灣智通有限公司 - 行走助力機器人 - π (未包運費),1,strict
+,is_exact_028,床靠背,,True,床靠背,1,strict
+,is_exact_029,E1-002_醫療護理超低床 - MFB,,True,E1-002_醫療護理超低床 - MFB,1,strict
+,is_exact_030,(內地) 上海繪神醫療科技有限公司 - DreamPods安睡儀 (未包運費),,True,(內地) 上海繪神醫療科技有限公司 - DreamPods安睡儀 (未包運費),1,strict
+,is_exact_031,(內地) 傳承醫療有限公司 - 無線隨身SOS長者呼叫器呼叫套裝 (未包運費),,True,(內地) 傳承醫療有限公司 - 無線隨身SOS長者呼叫器呼叫套裝 (未包運費),1,strict
+,is_exact_032,(內地) SCAN INFINITY LTD. - 智能家居運動系統 (未包運費),,True,(內地) SCAN INFINITY LTD. - 智能家居運動系統 (未包運費),1,strict
+,is_exact_033,(香港) Motive Force - 居家動樂 Alpha + Beta (已包運費 - 離島區除外),,True,(香港) Motive Force - 居家動樂 Alpha + Beta (已包運費 - 離島區除外),1,strict
+,is_exact_034,(內地) 世衛實業有限公司 - 小彬AI情感陪伴機器人 (未包運費),,True,(內地) 世衛實業有限公司 - 小彬AI情感陪伴機器人 (未包運費),1,strict
+,is_exact_035,(內地) 數字華夏（深圳）科技有限公司 - 四足機器人 - 衛小鹿機器狗,,True,(內地) 數字華夏（深圳）科技有限公司 - 四足機器人 - 衛小鹿機器狗,1,strict
+,is_exact_036,HOHOLIFE好好生活 - Gyenno Bravo Twist 睿餐智能防抖匙 (已包運費),,True,HOHOLIFE好好生活 - Gyenno Bravo Twist 睿餐智能防抖匙 (已包運費),1,strict
+,is_exact_037,室內用餐車,,True,室內用餐車,1,strict
+,is_semantic_001,中心職業治療評估及諮詢服務,,True,上門家居評估,5,semantic_rerank
+,is_semantic_002,上門家居評估,,True,上門家居評估,1,semantic_rerank
+,is_semantic_003,(內地) Fairy Enterprise limited - AI復康機械手 (未包運費),,True,(內地) Fairy Enterprise limited - AI復康機械手 (未包運費),1,semantic_rerank
+,is_semantic_004,(內地) Fairy Enterprise limited - 智能髖關節外骨骼 (未包運費),,True,(內地) Fairy Enterprise limited - 智能髖關節外骨骼 (未包運費),1,semantic_rerank
+,is_semantic_005,床邊扶手,,True,床邊扶手,1,semantic_rerank
+,is_semantic_006,J1-001_多用途扶手 - PN,,True,J1-001_多用途扶手 - PN,1,semantic_rerank
+,is_semantic_007,"(內地) Shun Hing Technology Co., Ltd. - DynasynQ 無創葡萄糖監測手錶 (未包運費)",,True,"(內地) Shun Hing Technology Co., Ltd. - DynasynQ 無創葡萄糖監測手錶 (未包運費)",1,semantic_rerank
+,is_semantic_008,(內地) Smart Idea Health Technology Limited - 阿爾茨海默症尿液快篩試劑盒 (鑒忘Qankorey) (未包運費),,True,(內地) Smart Idea Health Technology Limited - 阿爾茨海默症尿液快篩試劑盒 (鑒忘Qankorey) (未包運費),1,semantic_rerank
+,is_semantic_009,(內地) 上海繪神醫療科技有限公司 - Stable手環 (未包運費),,True,(內地) 上海繪神醫療科技有限公司 - Stable手環 (未包運費),1,semantic_rerank
+,is_semantic_010,智能手錶,,True,智能手錶,1,semantic_rerank
+,is_semantic_011,(內地) 上海笪光科技有限公司 - 笪光導盲眼鏡 (未包運費),,True,(內地) 上海笪光科技有限公司 - 笪光導盲眼鏡 (未包運費),1,semantic_rerank
+,is_semantic_012,(內地) Medical Technologies Limited - Green Breeze - Air Purifier 醫療級別空氣淨化機 (已包運費),,True,(內地) Medical Technologies Limited - Green Breeze - Air Purifier 醫療級別空氣淨化機 (已包運費),1,semantic_rerank
+,is_semantic_013,(內地) 上海三思電子工程有限公司 - 紅外線小夜燈 (未包運費),,True,(內地) 杭州千景千味科技有限公司 - AI氣味生成器 (未包運費),3,semantic_rerank
+,is_semantic_014,(香港) NASK Technology Company Limited - NASK 納米纖維成人尿片 (未包運費),,True,(香港) NASK Technology Company Limited - NASK 納米纖維成人尿片 (未包運費),1,semantic_rerank
+,is_semantic_015,[徵求 - 物資] 沖涼椅,,True,[徵求 - 物資] 沖涼椅,1,semantic_rerank
+,is_semantic_016,(香港) Knitwarm Limited「溫享座墊」 + 5000mAh 行動電源 (顏色: City Twilight) - (已包運費 - 離島區除外),,True,(香港) Knit Warm - 「溫享座墊」 + 5000mAh 行動電源 (顏色: Cobalt Rhombus) (已包運費 - 離島區除外),5,semantic_rerank
+,is_semantic_017,(香港) Knit Warm - 「溫享座墊」 + 5000mAh 行動電源 (顏色: Cobalt Rhombus) (已包運費 - 離島區除外),,True,(香港) Knit Warm - 「溫享座墊」 + 5000mAh 行動電源 (顏色: Cobalt Rhombus) (已包運費 - 離島區除外),1,semantic_rerank
+,is_semantic_018,(香港) KOLB LIFE Limited / 網煮有限公司 - 咸魚白豆蓉 (未包運費),,True,(香港) KOLB LIFE Limited / 網煮有限公司 - 咸魚白豆蓉 (未包運費),1,semantic_rerank
+,is_semantic_019,(香港) KOLB LIFE Limited / 網煮有限公司 - 椰香紫薯豆奶露 (未包運費),,True,(香港) KOLB LIFE Limited / 網煮有限公司 - 椰香紫薯豆奶露 (未包運費),1,semantic_rerank
+,is_semantic_020,文化村生活及復康產品有限公司 - 銀適 拐杖椅,,True,文化村生活及復康產品有限公司 - 銀適 拐杖椅,1,semantic_rerank
+,is_semantic_021,枴杖椅,,True,枴杖椅,1,semantic_rerank
+,is_semantic_022,(內地) 傳承醫療有限公司 - 理療電熱墊 (未包運費),,True,(內地) 傳承醫療有限公司 - 理療電熱墊 (未包運費),1,semantic_rerank
+,is_semantic_023,(內地) 傳承醫療有限公司 - 理療電熱肩頸墊 (未包運費),,True,(內地) 傳承醫療有限公司 - 理療電熱肩頸墊 (未包運費),1,semantic_rerank
+,is_semantic_024,吊衣(折疊式移位機) - MS-S,,True,吊衣(移位機) - PA,4,semantic_rerank
+,is_semantic_025,吊衣(折疊式移位機) - EE - M,,False,吊衣(移位機) - PA,,semantic_rerank
+,is_semantic_026,"(內地) Shun Hing Technology Co., Ltd. - 智能助行機械人 ZW568 (未包運費)",,True,"(內地) Shun Hing Technology Co., Ltd. - 智能助行機械人 ZW568 (未包運費)",1,semantic_rerank
+,is_semantic_027,(內地) 港灣智通有限公司 - 行走助力機器人 - π (未包運費),,True,(內地) 港灣智通有限公司 - 行走助力機器人 - π (未包運費),1,semantic_rerank
+,is_semantic_028,床靠背,,True,床靠背,1,semantic_rerank
+,is_semantic_029,E1-002_醫療護理超低床 - MFB,,True,護理床安裝費,4,semantic_rerank
+,is_semantic_030,(內地) 上海繪神醫療科技有限公司 - DreamPods安睡儀 (未包運費),,True,(內地) 蘇州好博醫療器械股份有限公司 - 空氣波壓力治療儀 (未包運費),2,semantic_rerank
+,is_semantic_031,(內地) 傳承醫療有限公司 - 無線隨身SOS長者呼叫器呼叫套裝 (未包運費),,True,(內地) 傳承醫療有限公司 - 無線隨身SOS長者呼叫器呼叫套裝 (未包運費),1,semantic_rerank
+,is_semantic_032,(內地) SCAN INFINITY LTD. - 智能家居運動系統 (未包運費),,True,(內地) SCAN INFINITY LTD. - 智能家居運動系統 (未包運費),1,semantic_rerank
+,is_semantic_033,(香港) Motive Force - 居家動樂 Alpha + Beta (已包運費 - 離島區除外),,True,(香港) Motive Force - 居家動樂 Alpha + Beta (已包運費 - 離島區除外),1,semantic_rerank
+,is_semantic_034,(內地) 世衛實業有限公司 - 小彬AI情感陪伴機器人 (未包運費),,True,(內地) 世衛實業有限公司 - 小彬AI情感陪伴機器人 (未包運費),1,semantic_rerank
+,is_semantic_035,(內地) 數字華夏（深圳）科技有限公司 - 四足機器人 - 衛小鹿機器狗,,True,(內地) 數字華夏（深圳）科技有限公司 - 四足機器人 - 衛小鹿機器狗,1,semantic_rerank
+,is_semantic_036,HOHOLIFE好好生活 - Gyenno Bravo Twist 睿餐智能防抖匙 (已包運費),,True,HOHOLIFE好好生活 - Gyenno Bravo Twist 睿餐智能防抖匙 (已包運費),1,semantic_rerank
+,is_semantic_037,室內用餐車,,True,室內用餐車,1,semantic_rerank
+上門家居評估,is_llm_rerank_001,中心職業治療評估及諮詢服務,,True,中心職業治療評估及諮詢服務,,llm_rerank
+上門家居評估,is_llm_rerank_002,上門家居評估,,True,上門家居評估,,llm_rerank
+(內地) Fairy Enterprise limited - AI復康機械手 (未包運費),is_llm_rerank_003,(內地) Fairy Enterprise limited - AI復康機械手 (未包運費),,True,(內地) Fairy Enterprise limited - AI復康機械手 (未包運費),,llm_rerank
+(內地) Fairy Enterprise limited - 智能髖關節外骨骼 (未包運費),is_llm_rerank_004,(內地) Fairy Enterprise limited - 智能髖關節外骨骼 (未包運費),,True,(內地) Fairy Enterprise limited - 智能髖關節外骨骼 (未包運費),,llm_rerank
+床邊扶手,is_llm_rerank_005,床邊扶手,,True,床邊扶手,,llm_rerank
+J1-001_多用途扶手 - PN,is_llm_rerank_006,J1-001_多用途扶手 - PN,,True,J1-001_多用途扶手 - PN,,llm_rerank
+"(內地) Shun Hing Technology Co., Ltd. - DynasynQ 無創葡萄糖監測手錶 (未包運費)",is_llm_rerank_007,"(內地) Shun Hing Technology Co., Ltd. - DynasynQ 無創葡萄糖監測手錶 (未包運費)",,True,"(內地) Shun Hing Technology Co., Ltd. - DynasynQ 無創葡萄糖監測手錶 (未包運費)",,llm_rerank
+(內地) Smart Idea Health Technology Limited - 阿爾茨海默症尿液快篩試劑盒 (鑒忘Qankorey) (未包運費),is_llm_rerank_008,(內地) Smart Idea Health Technology Limited - 阿爾茨海默症尿液快篩試劑盒 (鑒忘Qankorey) (未包運費),,True,(內地) Smart Idea Health Technology Limited - 阿爾茨海默症尿液快篩試劑盒 (鑒忘Qankorey) (未包運費),,llm_rerank
+(內地) 上海繪神醫療科技有限公司 - Stable手環 (未包運費),is_llm_rerank_009,(內地) 上海繪神醫療科技有限公司 - Stable手環 (未包運費),,True,(內地) 上海繪神醫療科技有限公司 - Stable手環 (未包運費),,llm_rerank
+智能手錶,is_llm_rerank_010,智能手錶,,True,智能手錶,,llm_rerank
+(內地) 上海笪光科技有限公司 - 笪光導盲眼鏡 (未包運費),is_llm_rerank_011,(內地) 上海笪光科技有限公司 - 笪光導盲眼鏡 (未包運費),,True,(內地) 上海笪光科技有限公司 - 笪光導盲眼鏡 (未包運費),,llm_rerank
+(內地) Medical Technologies Limited - Green Breeze - Air Purifier 醫療級別空氣淨化機 (已包運費),is_llm_rerank_012,(內地) Medical Technologies Limited - Green Breeze - Air Purifier 醫療級別空氣淨化機 (已包運費),,True,(內地) Medical Technologies Limited - Green Breeze - Air Purifier 醫療級別空氣淨化機 (已包運費),,llm_rerank
+上門家居評估,is_llm_fallback_invalid_json_001,中心職業治療評估及諮詢服務,True,True,上門家居評估,,llm_fallback
+上門家居評估,is_llm_fallback_empty_response_002,上門家居評估,True,True,上門家居評估,,llm_fallback
+(內地) Fairy Enterprise limited - AI復康機械手 (未包運費),is_llm_fallback_unknown_identifier_003,(內地) Fairy Enterprise limited - AI復康機械手 (未包運費),True,True,(內地) Fairy Enterprise limited - AI復康機械手 (未包運費),,llm_fallback
+(內地) Fairy Enterprise limited - 智能髖關節外骨骼 (未包運費),is_llm_fallback_free_text_only_004,(內地) Fairy Enterprise limited - 智能髖關節外骨骼 (未包運費),True,True,(內地) Fairy Enterprise limited - 智能髖關節外骨骼 (未包運費),,llm_fallback
+床邊扶手,is_llm_fallback_partial_number_005,床邊扶手,False,True,J1-001_多用途扶手 - PN,,llm_fallback
+J1-001_多用途扶手 - PN,is_llm_fallback_malformed_object_006,J1-001_多用途扶手 - PN,False,True,J1-001_多用途扶手 - PN,,llm_fallback

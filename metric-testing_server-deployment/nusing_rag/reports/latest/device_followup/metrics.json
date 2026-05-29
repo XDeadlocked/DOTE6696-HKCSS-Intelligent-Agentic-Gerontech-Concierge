@@ -1,0 +1,5 @@
+{
+  "followup_routing_accuracy": 1.0,
+  "nested_branch_accuracy": 1.0,
+  "fallback_inventory_trigger_rate": 1.0
+}

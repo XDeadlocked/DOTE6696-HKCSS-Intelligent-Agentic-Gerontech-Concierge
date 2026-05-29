@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>招商局＆醫務 長者輔具租賃</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="top-nav">
+    <img class="top-logo" src="./logo.png" alt="招商局＆醫務 長者輔具租賃" />
+  </header>
+
+  <div class="wave-zone">
+    <div class="wave-curve"></div>
+  </div>
+
+  <main class="app-main">
+    <section id="errorBanner" class="banner error hidden"></section>
+    <section id="busyBanner" class="banner info hidden">系統正在處理中，請稍候。</section>
+
+    <article class="main-card-wrapper">
+      <div class="main-card-inner">
+        <div id="chatPanel" class="chat-thread"></div>
+
+        <div class="composer-dock">
+          <div class="step-panel">
+            <div class="step-header">
+              <div>
+                <h2 id="stepTitle">請選擇服務</h2>
+                <p id="stepHint" class="step-hint">系統會依照您的選擇，一步一步提供下一個問題或結果。</p>
+              </div>
+              <button id="restartButton" class="ghost-button" type="button">重新開始</button>
+            </div>
+            <div id="actionPanel" class="action-panel"></div>
+          </div>
+
+          <form id="composerForm" class="composer hidden">
+            <label id="composerLabel" class="composer-label" for="composerInput">請輸入內容</label>
+            <div class="composer-box">
+              <textarea id="composerInput" rows="2" placeholder=""></textarea>
+              <button id="composerSubmit" type="submit">送出</button>
+            </div>
+            <p id="composerHint" class="composer-hint"></p>
+          </form>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <div id="productDrawer" class="drawer hidden">
+    <div class="drawer-backdrop" data-close-drawer="true"></div>
+    <aside class="drawer-panel">
+      <div class="drawer-header">
+        <div>
+          <p id="drawerCategory" class="drawer-label"></p>
+          <h2 id="drawerTitle"></h2>
+        </div>
+        <button id="drawerClose" class="ghost-button" type="button">關閉</button>
+      </div>
+      <div class="drawer-grid">
+        <div class="drawer-metric">
+          <span>價格</span>
+          <strong id="drawerPrice">-</strong>
+        </div>
+        <div class="drawer-metric">
+          <span>庫存</span>
+          <strong id="drawerStock">-</strong>
+        </div>
+      </div>
+      <section class="drawer-section">
+        <h3>尺寸資訊</h3>
+        <div id="drawerDimensions" class="detail-list"></div>
+      </section>
+      <section class="drawer-section">
+        <h3>產品說明</h3>
+        <p id="drawerDescription" class="detail-text"></p>
+      </section>
+    </aside>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

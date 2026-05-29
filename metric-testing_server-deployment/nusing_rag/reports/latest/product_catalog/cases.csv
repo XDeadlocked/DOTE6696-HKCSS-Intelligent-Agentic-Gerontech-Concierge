@@ -1,0 +1,95 @@
+case_id,expected,passed,predicted,task
+pc_category_001,其他,True,其他,category_browse
+pc_category_alt_001,其他,True,其他,category_browse
+pc_category_002,復康設備,True,復康設備,category_browse
+pc_category_alt_002,復康設備,True,復康設備,category_browse
+pc_category_003,扶手,True,扶手,category_browse
+pc_category_alt_003,扶手,True,扶手,category_browse
+pc_category_004,智能健康監測,True,智能健康監測,category_browse
+pc_category_alt_004,智能健康監測,True,智能健康監測,category_browse
+pc_category_005,智能手錶,True,智能手錶,category_browse
+pc_category_alt_005,智能手錶,True,智能手錶,category_browse
+pc_category_006,智能眼鏡,True,智能眼鏡,category_browse
+pc_category_alt_006,智能眼鏡,True,智能眼鏡,category_browse
+pc_category_007,樂齡輔助用品,True,樂齡輔助用品,category_browse
+pc_category_alt_007,樂齡輔助用品,True,樂齡輔助用品,category_browse
+pc_category_008,沐浴及如廁輔助用品,True,沐浴及如廁輔助用品,category_browse
+pc_category_alt_008,沐浴及如廁輔助用品,True,沐浴及如廁輔助用品,category_browse
+pc_category_009,減壓坐墊,True,減壓坐墊,category_browse
+pc_category_alt_009,減壓坐墊,True,減壓坐墊,category_browse
+pc_category_010,照護食品,True,照護食品,category_browse
+pc_category_alt_010,照護食品,True,照護食品,category_browse
+pc_category_011,特別用途座椅,True,特別用途座椅,category_browse
+pc_category_alt_011,特別用途座椅,True,特別用途座椅,category_browse
+pc_category_012,痛症舒緩,True,痛症舒緩,category_browse
+pc_category_alt_012,痛症舒緩,True,痛症舒緩,category_browse
+pc_category_013,移位機及配件,True,移位機及配件,category_browse
+pc_category_alt_013,移位機及配件,True,移位機及配件,category_browse
+pc_category_014,行動輔助器材,True,行動輔助器材,category_browse
+pc_category_alt_014,行動輔助器材,True,行動輔助器材,category_browse
+pc_category_015,護理床及配件,True,護理床及配件,category_browse
+pc_category_alt_015,護理床及配件,True,護理床及配件,category_browse
+pc_category_016,通訊輔助工具,True,通訊輔助工具,category_browse
+pc_category_alt_016,通訊輔助工具,True,通訊輔助工具,category_browse
+pc_category_017,運動產品,True,運動產品,category_browse
+pc_category_alt_017,運動產品,True,運動產品,category_browse
+pc_category_018,陪伴機械人,True,陪伴機械人,category_browse
+pc_category_alt_018,陪伴機械人,True,陪伴機械人,category_browse
+pc_category_019,食用品,True,食用品,category_browse
+pc_category_alt_019,食用品,True,食用品,category_browse
+pc_detail_001_01,中心職業治療評估及諮詢服務,True,中心職業治療評估及諮詢服務,product_detail
+pc_detail_001_02,上門家居評估,True,上門家居評估,product_detail
+pc_detail_002_01,(內地) Fairy Enterprise limited - AI復康機械手 (未包運費),True,(內地) Fairy Enterprise limited - AI復康機械手 (未包運費),product_detail
+pc_detail_002_02,(內地) Fairy Enterprise limited - 智能髖關節外骨骼 (未包運費),True,(內地) Fairy Enterprise limited - 智能髖關節外骨骼 (未包運費),product_detail
+pc_detail_003_01,床邊扶手,True,床邊扶手,product_detail
+pc_detail_003_02,J1-001_多用途扶手 - PN,True,J1-001_多用途扶手 - PN,product_detail
+pc_detail_004_01,"(內地) Shun Hing Technology Co., Ltd. - DynasynQ 無創葡萄糖監測手錶 (未包運費)",True,"(內地) Shun Hing Technology Co., Ltd. - DynasynQ 無創葡萄糖監測手錶 (未包運費)",product_detail
+pc_detail_004_02,(內地) Smart Idea Health Technology Limited - 阿爾茨海默症尿液快篩試劑盒 (鑒忘Qankorey) (未包運費),True,(內地) Smart Idea Health Technology Limited - 阿爾茨海默症尿液快篩試劑盒 (鑒忘Qankorey) (未包運費),product_detail
+pc_detail_005_01,(內地) 上海繪神醫療科技有限公司 - Stable手環 (未包運費),True,(內地) 上海繪神醫療科技有限公司 - Stable手環 (未包運費),product_detail
+pc_detail_005_02,智能手錶,True,智能手錶,product_detail
+pc_detail_006_01,(內地) 上海笪光科技有限公司 - 笪光導盲眼鏡 (未包運費),True,(內地) 上海笪光科技有限公司 - 笪光導盲眼鏡 (未包運費),product_detail
+pc_detail_007_01,(內地) Medical Technologies Limited - Green Breeze - Air Purifier 醫療級別空氣淨化機 (已包運費),True,(內地) Medical Technologies Limited - Green Breeze - Air Purifier 醫療級別空氣淨化機 (已包運費),product_detail
+pc_detail_007_02,(內地) 上海三思電子工程有限公司 - 紅外線小夜燈 (未包運費),True,(內地) 上海三思電子工程有限公司 - 紅外線小夜燈 (未包運費),product_detail
+pc_detail_008_01,(香港) NASK Technology Company Limited - NASK 納米纖維成人尿片 (未包運費),True,(香港) NASK Technology Company Limited - NASK 納米纖維成人尿片 (未包運費),product_detail
+pc_detail_008_02,[徵求 - 物資] 沖涼椅,True,[徵求 - 物資] 沖涼椅,product_detail
+pc_detail_009_01,(香港) Knitwarm Limited「溫享座墊」 + 5000mAh 行動電源 (顏色: City Twilight) - (已包運費 - 離島區除外),True,(香港) Knitwarm Limited「溫享座墊」 + 5000mAh 行動電源 (顏色: City Twilight) - (已包運費 - 離島區除外),product_detail
+pc_detail_009_02,(香港) Knit Warm - 「溫享座墊」 + 5000mAh 行動電源 (顏色: Cobalt Rhombus) (已包運費 - 離島區除外),True,(香港) Knit Warm - 「溫享座墊」 + 5000mAh 行動電源 (顏色: Cobalt Rhombus) (已包運費 - 離島區除外),product_detail
+pc_detail_010_01,(香港) KOLB LIFE Limited / 網煮有限公司 - 咸魚白豆蓉 (未包運費),True,(香港) KOLB LIFE Limited / 網煮有限公司 - 咸魚白豆蓉 (未包運費),product_detail
+pc_detail_010_02,(香港) KOLB LIFE Limited / 網煮有限公司 - 椰香紫薯豆奶露 (未包運費),True,(香港) KOLB LIFE Limited / 網煮有限公司 - 椰香紫薯豆奶露 (未包運費),product_detail
+pc_detail_011_01,文化村生活及復康產品有限公司 - 銀適 拐杖椅,True,文化村生活及復康產品有限公司 - 銀適 拐杖椅,product_detail
+pc_detail_011_02,枴杖椅,True,枴杖椅,product_detail
+pc_detail_012_01,(內地) 傳承醫療有限公司 - 理療電熱墊 (未包運費),True,(內地) 傳承醫療有限公司 - 理療電熱墊 (未包運費),product_detail
+pc_detail_012_02,(內地) 傳承醫療有限公司 - 理療電熱肩頸墊 (未包運費),True,(內地) 傳承醫療有限公司 - 理療電熱肩頸墊 (未包運費),product_detail
+pc_detail_013_01,吊衣(折疊式移位機) - MS-S,True,吊衣(折疊式移位機) - MS-S,product_detail
+pc_detail_013_02,吊衣(折疊式移位機) - EE - M,True,吊衣(折疊式移位機) - EE - M,product_detail
+pc_detail_014_01,"(內地) Shun Hing Technology Co., Ltd. - 智能助行機械人 ZW568 (未包運費)",True,"(內地) Shun Hing Technology Co., Ltd. - 智能助行機械人 ZW568 (未包運費)",product_detail
+pc_detail_014_02,(內地) 港灣智通有限公司 - 行走助力機器人 - π (未包運費),True,(內地) 港灣智通有限公司 - 行走助力機器人 - π (未包運費),product_detail
+pc_detail_015_01,床靠背,True,床靠背,product_detail
+pc_detail_015_02,E1-002_醫療護理超低床 - MFB,True,E1-002_醫療護理超低床 - MFB,product_detail
+pc_detail_016_01,(內地) 上海繪神醫療科技有限公司 - DreamPods安睡儀 (未包運費),True,(內地) 上海繪神醫療科技有限公司 - DreamPods安睡儀 (未包運費),product_detail
+pc_detail_016_02,(內地) 傳承醫療有限公司 - 無線隨身SOS長者呼叫器呼叫套裝 (未包運費),True,(內地) 傳承醫療有限公司 - 無線隨身SOS長者呼叫器呼叫套裝 (未包運費),product_detail
+pc_detail_017_01,(內地) SCAN INFINITY LTD. - 智能家居運動系統 (未包運費),True,(內地) SCAN INFINITY LTD. - 智能家居運動系統 (未包運費),product_detail
+pc_detail_017_02,(香港) Motive Force - 居家動樂 Alpha + Beta (已包運費 - 離島區除外),True,(香港) Motive Force - 居家動樂 Alpha + Beta (已包運費 - 離島區除外),product_detail
+pc_detail_018_01,(內地) 世衛實業有限公司 - 小彬AI情感陪伴機器人 (未包運費),True,(內地) 世衛實業有限公司 - 小彬AI情感陪伴機器人 (未包運費),product_detail
+pc_detail_018_02,(內地) 數字華夏（深圳）科技有限公司 - 四足機器人 - 衛小鹿機器狗,True,(內地) 數字華夏（深圳）科技有限公司 - 四足機器人 - 衛小鹿機器狗,product_detail
+pc_detail_019_01,HOHOLIFE好好生活 - Gyenno Bravo Twist 睿餐智能防抖匙 (已包運費),True,HOHOLIFE好好生活 - Gyenno Bravo Twist 睿餐智能防抖匙 (已包運費),product_detail
+pc_detail_019_02,室內用餐車,True,室內用餐車,product_detail
+pc_page_001,7,True,7,pagination
+pc_page_002,11,True,11,pagination
+pc_page_003,1,True,1,pagination
+pc_page_004,12,True,12,pagination
+pc_page_005,1,True,1,pagination
+pc_page_006,1,True,1,pagination
+pc_page_007,8,True,8,pagination
+pc_page_008,7,True,7,pagination
+pc_page_009,7,True,7,pagination
+pc_page_010,4,True,4,pagination
+pc_page_011,3,True,3,pagination
+pc_page_012,7,True,7,pagination
+pc_page_013,3,True,3,pagination
+pc_page_014,13,True,13,pagination
+pc_page_015,10,True,10,pagination
+pc_page_016,9,True,9,pagination
+pc_page_017,1,True,1,pagination
+pc_page_018,3,True,3,pagination
+pc_page_019,5,True,5,pagination
